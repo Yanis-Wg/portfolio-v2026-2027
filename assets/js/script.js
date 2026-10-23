@@ -228,6 +228,8 @@ function changeDisposition(){
     }
 }
 
+let openOrClose=0
+
 function socialMediaMenuAnimationEnter(){
     let tab=document.getElementsByClassName("menuReseauxSociaux-item")
     tab[0].style.right="10rem"
@@ -262,4 +264,14 @@ function socialMediaMenuAnimationLeave(){
     tab[1].style.opacity="0"
     tab[2].style.opacity="0"
     tab[3].style.opacity="0"
+}
+
+function socialMediaMenuAnimationOpenOrClose(){
+    if(openOrClose%2==0){
+        socialMediaMenuAnimationEnter()
+        openOrClose++
+    }else if(openOrClose%2!=0){
+        socialMediaMenuAnimationLeave()
+        openOrClose++
+    }
 }
