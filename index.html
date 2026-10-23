@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Yanis Wong, étudiant ingénieur ESIEE (IMAC) : développement web FullStack, UI/UX design et projets créatifs.">
+    <title>Yanis Wong – Développeur FullStack & UI/UX Designer</title>
+    <!-- ICONE -->
+    <link rel="icon" href="./assets/images/icons/pokeball_logo.png" type="image/png">
+    <link rel="stylesheet" href="./assets/css/components/animation.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <!-- HEAD -->
+    <link rel="stylesheet" href="./assets/css/components/variable.css">
+    <link rel="stylesheet" href="./assets/css/components/header.css">
+    <link rel="stylesheet" href="./assets/css/components/footer.css">
+    <script src="./assets/js/script.js" defer></script>
+    <!-- SMOOTH SCROLL -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.27/dist/lenis.css">
+    <script src="https://unpkg.com/lenis@1.3.27/dist/lenis.min.js"></script> 
+    <script>new Lenis({ autoRaf: true, autoToggle: true, anchors: true, allowNestedScroll: true, naiveDimensions: true, stopInertiaOnNavigate: true })</script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Accueil</a>
+                </li>
+                <li>
+                    <a href="">Projets</a>
+                </li>
+                <li>
+                    <a href="">Compétences</a>
+                </li>
+                <li>
+                    <a href="">Témoignages</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- CONTACT MENU -->
+    <nav onmouseenter="socialMediaMenuAnimationEnter()" onclick="socialMediaMenuAnimationLeave()" id="menuReseauxSociaux">
+        <button>
+            <img src="./assets/images/icons/social_media_menu.svg" alt="Social">
+        </button>
+        <a target="_blank" class="menuReseauxSociaux-item" href="./assets/docs/CV_UI_UX_Designer_Yanis_WONG.pdf">
+            <img src="./assets/images/icons/cv.svg" alt="CV">
+        </a>
+        <a target="_blank" class="menuReseauxSociaux-item" href="https://www.linkedin.com/in/yaniswong04/">
+            <img src="./assets/images/icons/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a target="_blank" class="menuReseauxSociaux-item" href="https://github.com/Yanis-Wg">
+            <img src="./assets/images/icons/github.svg" alt="GitHub">
+        </a>
+        <a class="menuReseauxSociaux-item" href="mailto:yanis.wong.pro@gmail.com">
+            <img src="./assets/images/icons/mail.svg" alt="Mail">
+        </a>
+    </nav>
+    <!-- MAIN -->
+    <main>
+        <section class="homeContainer bgWhite">
+            <!-- Présentation -->
+             <!-- Première Partie -->
+            <div class="homeContainer-firstDiv">
+                <h1>
+                    Rigoureux et Autonome 
+                    <br>
+                    Je suis un développeur FullStack et un UI/UX Designer.
+                </h1>
+                <p>
+                    Je m’appelle Yanis Wong et je suis un étudiant à l’école d’ingénieur ESIEE, parcours Image Multimédia Audiovisuel Communication.
+                </p>
+            </div>
+            <!-- Deuxième Partie -->
+            <div class="homeContainer-secondDiv">
+                <!-- Première Section -->
+                <div class="homeContainer-secondDiv-firstSection">
+                    <p>
+                        « Tout est possible à qui rêve, ose, travaille et n’abandonne jamais. » — Xavier Dolan
+                    </p>
+                    <div>
+                        <p>
+                            Proactif, rigoureux, curieux, motivé et autonome.
+                            <br>
+                            Je m’appelle Yanis Wong, je suis née le 3 Novembre 2004, je vis en banlieue Parisienne.
+                        </p>
+                        <p class="text-indent">
+                            Je suis détenteur d’un D.U.T. Métier du Multimédia et de l’Internet de l’université Gustave Eiffel. Je poursuis actuellement mes études en école d’ingénieur à l’ESIEE, dans la filière IMAC. 
+                            <br>
+                            Après l’obtention de ce diplôme orientée développement web, je souhaiterai poursuivre dans le master “Expert en création numérique interactive” à Gobelins.
+                        </p>
+                    </div>
+                </div>
+                <!-- Deuxième Section -->
+                <div class="homeContainer-secondDiv-secondSection">
+                    <div class="buttonInfo buttonInfoFirst"></div>
+                    <div class="buttonInfo buttonInfoSecond"></div>
+                    <img src="./assets/images/home/Accueil/lycoris_renaissance_red.svg" alt="lycoris">
+                </div>
+                <!-- Troisième Section -->
+                <div class="homeContainer-secondDiv-thirdSection">
+                    <div>
+                    <p>
+                        Mes passions sont principalement orienté dans le développement web, le design, la création, la mode et le sport, je suis un grand fan de volley ball.
+                    </p>
+                    <p class="text-indent">
+                        Passionée, j’apprécie tout le processus d’un projet, de sa création à finalisation. Ce qui fait mon unicité est ma passion et mon dévouement à la fois pour le développement web et l’UI/UX Design compléter par mon regard d’artiste. Jusque là, la pluridisciplinarité de mes formations m’ont permis d’avoir une vision général et critique de mon travail.
+                    </p>   
+                    </div>
+                    <a onmouseover="rotateOnHover(0)" onmouseout="rotateOnLeave(0)" class="callToAction" target="_blank" href="./assets/docs/CV_UI_UX_Designer_Yanis_WONG.pdf">
+                        <p>EN SAVOIR PLUS</p>
+                        <img class="callToActionArrow" src="./assets/images/icons/arrow.svg" alt="arrow">
+                    </a> 
+                </div>
+            </div>
+        </section>
+        <section class="projectContainer">
+            <div class="projectContainer-projects bgWhite">
+                <div class="a définir">
+                    <h2>
+                        Projet 1
+                    </h2>
+                </div>
+                <div class="a définir">
+                    <a onmouseover="rotateOnHover(1)" onmouseout="rotateOnLeave(1)" class="callToAction" href="./assets/docs/">
+                        <p>EN SAVOIR PLUS</p>
+                        <img class="callToActionArrow" src="./assets/images/icons/arrow.svg" alt="arrow">
+                    </a> 
+                </div>
+            </div>
+            <div class="projectContainer-projects bgWhite">
+                <div class="a définir">
+                    <h2>
+                        <!-- Projet 1 -->
+                    </h2>
+                </div>
+                <div class="a définir">
+                    <a onmouseover="rotateOnHover(2)" onmouseout="rotateOnLeave(2)" class="callToActionTwo" href="./assets/docs/">
+                        <img class="callToActionArrow" src="./assets/images/icons/arrow.svg" alt="arrow">
+                    </a> 
+                </div>
+            </div>
+            <div class="projectContainer-projects bgWhite">
+                <div class="a définir">
+                    <h2>
+                        <!-- Projet 1 -->
+                    </h2>
+                </div>
+                <div class="a définir">
+                    <a onmouseover="rotateOnHover(3)" onmouseout="rotateOnLeave(3)" class="callToActionTwo" href="./assets/docs/">
+                        <img class="callToActionArrow" src="./assets/images/icons/arrow.svg" alt="arrow">
+                    </a> 
+                </div>
+            </div>
+            <div class="projectContainer-projects bgWhite">
+                <div class="a définir">
+                    <h2>
+                        <!-- Projet 1 -->
+                    </h2>
+                </div>
+                <div class="a définir">
+                    <a onmouseover="rotateOnHover(4)" onmouseout="rotateOnLeave(4)" class="callToActionTwo" href="./assets/docs/">
+                        <img class="callToActionArrow" src="./assets/images/icons/arrow.svg" alt="arrow">
+                    </a> 
+                </div>
+            </div>
+            <div class="projectContainer-projects bgWhite">
+                <div class="a définir">
+                    <h2>
+                        <!-- Projet 1 -->
+                    </h2>
+                </div>
+                <div class="a définir">
+                    <a onmouseover="rotateOnHover(5)" onmouseout="rotateOnLeave(5)" class="callToActionTwo" href="./assets/docs/">
+                        <img class="callToActionArrow" src="./assets/images/icons/arrow.svg" alt="arrow">
+                    </a> 
+                </div>
+            </div>
+            <div class="projectContainer-projects bgWhite">
+                <a onmouseover="rotateOnHoverPlus()" onmouseout="rotateOnLeavePlus()" class="callToAction" href="./assets/docs/">
+                    <img id="callToActionPlus" src="./assets/images/icons/more.svg" alt="more project">
+                </a> 
+            </div>
+        </section>
+        <section class="skillsContainer">
+            <div class="skillsContainer-part">
+                <h2>Développement</h2>
+                <div class="skillsContainer-part-app">
+
+                </div>
+            </div>
+            <div class="skillsContainer-part">
+                <h2>Design & Création</h2>
+                <div class="skillsContainer-part-app">
+
+                </div>
+            </div>
+            <div class="skillsContainer-part">
+                <h2>Management de Projet & Autres</h2>
+                <div class="skillsContainer-part-app">
+
+                </div>
+            </div>
+        </section>
+        <section class="allProjectContainer">
+            <h2>Tous mes projets</h2>
+            <a onmouseover="rotateOnHover(6)" onmouseout="rotateOnLeave(6)" class="callToAction" href="./pages/projets.html">
+                <p>DÉCOUVRIR</p>
+                <img class="callToActionArrow" src="./assets/images/icons/arrow.svg" alt="arrow">
+            </a> 
+        </section>
+        <section class="testimonyContainer">
+            <div class="testimonyContainer-cards">
+                <div class="testimonyContainer-card">
+                    <img src="" alt="">
+                    <div>
+                        <h2>Laurent Houdard</h2>
+                        <p class="italic">Ingénieur en Recherche & Développement</p>
+                    </div>
+                    <p>Je suis le superviseur de Yanis Wong depuis le 2 avril 2024, dans le cadre du stage qu’il effectue au sein de l’équipe R&D de Streamcore AI. Sa mission a consisté à créer un thème WordPress personnalisé pour la mise à jour du site web de l’entreprise.</p>
+                    <p>Yanis possédait déjà une bonne maîtrise des technologies web actuelles et a montré une réelle volonté d’acquérir de nouvelles compétences. Il a fait preuve d’une grande autonomie, même si je pense qu’il a encore le potentiel pour aller plus loin. De plus, il s’est montré sérieux, travailleur, agréable et respectueux avec ses collègues.</p>
+                </div>
+                <div class="testimonyContainer-card">
+                    <img src="" alt="">
+                    <div>
+                        <h2>Brice Vincesini</h2>
+                        <p class="italic">Responsable Marketing et Community Manager</p>
+                    </div>
+                    <p>Tout au long de son stage, Yanis s’est parfaitement intégré à l’équipe. Son enthousiasme, son professionnalisme ainsi que sa créativité et sa rigueur ont été très appréciés. Il a apporté une énergie positive et un réel sens du détail.</p>
+                    <p>Nous avons également été impressionnés par sa capacité à résoudre les problèmes rapidement, sa collaboration efficace avec différentes équipes et sa curiosité intellectuelle, qui ont fait de lui un atout pour l’entreprise.</p>
+                </div>
+                <div class="testimonyContainer-card">
+                    <img src="" alt="">
+                    <div>
+                        <h2>Raphael Cadete</h2>
+                        <p class="italic">Développeur Fullstack</p>
+                    </div>
+                    <p>Yanis est une personne très agréable et coopérative, dont la convivialité rend le travail avec lui particulièrement plaisant. Son intérêt marqué pour l’UI/UX a été un véritable atout, rehaussant la qualité de nos projets.</p>
+                    <p>Toujours désireux d’élargir ses compétences, il apprend de nouvelles bibliothèques et langages avec proactivité. Cette soif d’apprendre témoigne de son sérieux et de son engagement, et profite autant à son développement qu’à l’enrichissement de l’expertise collective de l’équipe.</p>
+                </div>
+                <div class="testimonyContainer-card">
+                    <img src="" alt="">
+                    <div>
+                        <h2>Inès Temmar</h2>
+                        <p class="italic">Développeur Fullstack</p>
+                    </div>
+                    <p>Yanis est une personne très agréable et coopérative, dont la convivialité rend le travail avec lui particulièrement plaisant. Son intérêt marqué pour l’UI/UX a été un véritable atout, rehaussant la qualité de nos projets.</p>
+                    <p>Toujours désireux d’élargir ses compétences, il apprend de nouvelles bibliothèques et langages avec proactivité. Cette soif d’apprendre témoigne de son sérieux et de son engagement, et profite autant à son développement qu’à l’enrichissement de l’expertise collective de l’équipe.</p>
+                </div>
+                <div class="testimonyContainer-card">
+                    <img src="" alt="">
+                    <div>
+                        <h2>Laurent Houdard</h2>
+                        <p class="italic">Ingénieur en Recherche & Développement</p>
+                    </div>
+                    <p>Je suis le superviseur de Yanis Wong depuis le 2 avril 2024, dans le cadre du stage qu’il effectue au sein de l’équipe R&D de Streamcore AI. Sa mission a consisté à créer un thème WordPress personnalisé pour la mise à jour du site web de l’entreprise.</p>
+                    <p>Yanis possédait déjà une bonne maîtrise des technologies web actuelles et a montré une réelle volonté d’acquérir de nouvelles compétences. Il a fait preuve d’une grande autonomie, même si je pense qu’il a encore le potentiel pour aller plus loin. De plus, il s’est montré sérieux, travailleur, agréable et respectueux avec ses collègues.</p>
+                </div>
+
+            </div>
+            <div class="buttonNextOrPrevious">
+                <button>
+                    <img src="./assets/images/icons/button-left.svg" alt="">
+                </button>
+                <button>
+                    <img src="./assets/images/icons/button-right.svg" alt="">
+                </button>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <nav>
+            <ul>
+                <li class="black-line">
+                    <h2>Mail</h2>
+                    <a href="mailto:yanis.wong.pro@gmail.com" onmouseover="rotateOnHover(7)" onmouseout="rotateOnLeave(7)" class="footer-link">
+                        yanis.wong.pro@gmail.com
+                        <img class="callToActionArrow" src="./assets/images/icons/arrow.svg" alt="">
+                    </a>
+                </li>
+                <li class="black-line">
+                    <h2>GitHub</h2>
+                    <a href="https://github.com/Yanis-Wg" target="_blank" onmouseover="rotateOnHover(8)" onmouseout="rotateOnLeave(8)" class="footer-link">
+                        yanis_wg
+                        <img class="callToActionArrow" src="./assets/images/icons/arrow.svg" alt="">
+                    </a>
+                </li>
+                <li class="black-line">
+                    <h2>LinkedIn</h2>
+                    <a href="https://www.linkedin.com/in/yaniswong04/" target="_blank" onmouseover="rotateOnHover(9)" onmouseout="rotateOnLeave(9)" class="footer-link">
+                        yanis-wong
+                        <img class="callToActionArrow" src="./assets/images/icons/arrow.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <h2>Télécharger mon CV</h2>
+                    <a href="./assets/docs/CV_UI_UX_Designer_Yanis_WONG.pdf" target="_blank" onmouseover="rotateOnHover(10)" onmouseout="rotateOnLeave(10)" class="footer-link">
+                        yanis-wong
+                        <img class="callToActionArrow" src="./assets/images/icons/arrow.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer-f">
+            <div>
+                <p>Paris, France</p>
+                <div>
+                    <div id="available-light"></div>
+                    <p>Available</p>
+                </div>
+            </div>
+            <div>
+                <p>+33 7 67 88 73 80</p>
+                <p>©2026</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

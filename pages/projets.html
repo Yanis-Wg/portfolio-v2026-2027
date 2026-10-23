@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Yanis Wong, étudiant ingénieur ESIEE (IMAC) : développement web FullStack, UI/UX design et projets créatifs.">
+    <title>Yanis Wong – Mes Projets</title>
+    <!-- ICONE -->
+    <link rel="icon" href="../assets/images/icons/pokeball_logo.png" type="image/png">
+    <link rel="stylesheet" href="../assets/css/components/animation.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/projets.css">
+    <!-- HEAD -->
+    <link rel="stylesheet" href="../assets/css/components/variable.css">
+    <link rel="stylesheet" href="../assets/css/components/header.css">
+    <link rel="stylesheet" href="../assets/css/components/footer.css">
+    <script src="../assets/js/script.js" defer></script>
+    <!-- SMOOTH SCROLL -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.27/dist/lenis.css">
+    <script src="https://unpkg.com/lenis@1.3.27/dist/lenis.min.js"></script> 
+    <script>new Lenis({ autoRaf: true, autoToggle: true, anchors: true, allowNestedScroll: true, naiveDimensions: true, stopInertiaOnNavigate: true })</script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Accueil</a>
+                </li>
+                <li>
+                    <a href="">Projets</a>
+                </li>
+                <li>
+                    <a href="">Compétences</a>
+                </li>
+                <li>
+                    <a href="">Témoignages</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- CONTACT MENU -->
+    <nav onmouseenter="socialMediaMenuAnimationEnter()" onclick="socialMediaMenuAnimationLeave()" id="menuReseauxSociaux">
+        <button>
+            <img src="../assets/images/icons/social_media_menu.svg" alt="Social">
+        </button>
+        <a target="_blank" class="menuReseauxSociaux-item" href="../assets/docs/CV_UI_UX_Designer_Yanis_WONG.pdf">
+            <img src="../assets/images/icons/cv.svg" alt="CV">
+        </a>
+        <a target="_blank" class="menuReseauxSociaux-item" href="https://www.linkedin.com/in/yaniswong04/">
+            <img src="../assets/images/icons/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a target="_blank" class="menuReseauxSociaux-item" href="https://github.com/Yanis-Wg">
+            <img src="../assets/images/icons/github.svg" alt="GitHub">
+        </a>
+        <a class="menuReseauxSociaux-item" href="mailto:yanis.wong.pro@gmail.com">
+            <img src="../assets/images/icons/mail.svg" alt="Mail">
+        </a>
+    </nav>
+    <!-- MAIN -->
+    <main>
+        <section class="projects-container">
+            <a class="backButton" href="../index.html">
+                <img src="../assets/images/icons/button-left.svg" alt="">
+            </a>
+            <!-- Filtre et disposition -->
+            <div class="projectFilterAndDisposition">
+                <div>
+                    <img src="../assets/images/icons/filter.svg" alt="">
+                    <h2>Filtre</h2>
+                </div>
+                <button onclick="changeDisposition()">
+                    <img src="../assets/images/icons/disposition.svg" alt="">
+                </button>
+            </div>
+            <!-- Categorie Filtre -->
+            <div class="projectFilterButtons">
+                <button onclick="checkOrNot(0)">
+                    <div class="isCheck"></div>
+                    <h3 class="checkOrNotH3">Tout</h3>
+                </button>
+                <button onclick="checkOrNot(1)">
+                    <div class="isCheck"></div>
+                    <h3 class="checkOrNotH3">UI/UX Design</h3>
+                </button>
+                <button onclick="checkOrNot(2)">
+                    <div class="isCheck"></div>
+                    <h3 class="checkOrNotH3">Développement Web</h3>
+                </button>
+                <button onclick="checkOrNot(3)">
+                    <div class="isCheck"></div>
+                    <h3 class="checkOrNotH3">3D</h3>
+                </button>
+                <button onclick="checkOrNot(4)">
+                    <div class="isCheck"></div>
+                    <h3 class="checkOrNotH3">Design</h3>
+                </button>
+                <button onclick="checkOrNot(5)">
+                    <div class="isCheck"></div>
+                    <h3 class="checkOrNotH3">Audiovisuel</h3>
+                </button>
+                <button onclick="checkOrNot(6)">
+                    <div class="isCheck"></div>
+                    <h3 class="checkOrNotH3">Communication</h3>
+                </button>
+            </div>
+            <!-- PROJETS -->
+             <div class="allProjects">
+                <div class="project project-dev">
+                    <div>
+                        <h2>
+                            Projet 1
+                        </h2>
+                    </div>
+                    <div>
+                        <a onmouseover="rotateOnHover(0)" onmouseout="rotateOnLeave(0)" class="callToAction" href="./assets/docs/">
+                            <p>EN SAVOIR PLUS</p>
+                            <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="arrow">
+                        </a> 
+                    </div>
+                </div>
+                <div class="project project-design">
+                    <div>
+                        <h2>
+                            Projet 1
+                        </h2>
+                    </div>
+                    <div>
+                        <a onmouseover="rotateOnHover(1)" onmouseout="rotateOnLeave(1)" class="callToAction" href="./assets/docs/">
+                            <p>EN SAVOIR PLUS</p>
+                            <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="arrow">
+                        </a> 
+                    </div>
+                </div>
+                <div class="project project-dev">
+                    <div>
+                        <h2>
+                            Projet 1
+                        </h2>
+                    </div>
+                    <div>
+                        <a onmouseover="rotateOnHover(2)" onmouseout="rotateOnLeave(2)" class="callToAction" href="./assets/docs/">
+                            <p>EN SAVOIR PLUS</p>
+                            <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="arrow">
+                        </a> 
+                    </div>
+                </div>
+                <div class="project project-dev">
+                    <div>
+                        <h2>
+                            Projet 1
+                        </h2>
+                    </div>
+                    <div>
+                        <a onmouseover="rotateOnHover(3)" onmouseout="rotateOnLeave(3)" class="callToAction" href="./assets/docs/">
+                            <p>EN SAVOIR PLUS</p>
+                            <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="arrow">
+                        </a> 
+                    </div>
+                </div>
+                <div class="project project-uiUxDesign">
+                    <div>
+                        <h2>
+                            Projet 1
+                        </h2>
+                    </div>
+                    <div>
+                        <a onmouseover="rotateOnHover(4)" onmouseout="rotateOnLeave(4)" class="callToAction" href="./assets/docs/">
+                            <p>EN SAVOIR PLUS</p>
+                            <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="arrow">
+                        </a> 
+                    </div>
+                </div>
+                <div class="project project-3D">
+                    <div>
+                        <h2>
+                            Projet 1
+                        </h2>
+                    </div>
+                    <div>
+                        <a onmouseover="rotateOnHover(5)" onmouseout="rotateOnLeave(5)" class="callToAction" href="./assets/docs/">
+                            <p>EN SAVOIR PLUS</p>
+                            <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="arrow">
+                        </a> 
+                    </div>
+                </div>
+                <div class="project project-audiovisual">
+                    <div>
+                        <h2>
+                            Projet 1
+                        </h2>
+                    </div>
+                    <div>
+                        <a onmouseover="rotateOnHover(6)" onmouseout="rotateOnLeave(6)" class="callToAction" href="./assets/docs/">
+                            <p>EN SAVOIR PLUS</p>
+                            <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="arrow">
+                        </a> 
+                    </div>
+                </div>
+                <div class="project project-com">
+                    <div>
+                        <h2>
+                            Projet 1
+                        </h2>
+                    </div>
+                    <div>
+                        <a onmouseover="rotateOnHover(6)" onmouseout="rotateOnLeave(6)" class="callToAction" href="./assets/docs/">
+                            <p>EN SAVOIR PLUS</p>
+                            <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="arrow">
+                        </a> 
+                    </div>
+                </div>
+             </div>
+             <div class="moreIncoming-container">
+                <h2>Plus de projet à venir...</h2>
+             </div>
+        </section>
+    </main><!-- FOOTER -->
+    <footer>
+        <nav>
+            <ul>
+                <li class="black-line">
+                    <h2>Mail</h2>
+                    <a href="mailto:yanis.wong.pro@gmail.com" onmouseover="rotateOnHover(7)" onmouseout="rotateOnLeave(7)" class="footer-link">
+                        yanis.wong.pro@gmail.com
+                        <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="">
+                    </a>
+                </li>
+                <li class="black-line">
+                    <h2>GitHub</h2>
+                    <a href="https://github.com/Yanis-Wg" target="_blank" onmouseover="rotateOnHover(8)" onmouseout="rotateOnLeave(8)" class="footer-link">
+                        yanis_wg
+                        <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="">
+                    </a>
+                </li>
+                <li class="black-line">
+                    <h2>LinkedIn</h2>
+                    <a href="https://www.linkedin.com/in/yaniswong04/" target="_blank" onmouseover="rotateOnHover(9)" onmouseout="rotateOnLeave(9)" class="footer-link">
+                        yanis-wong
+                        <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <h2>Télécharger mon CV</h2>
+                    <a href="./assets/docs/CV_UI_UX_Designer_Yanis_WONG.pdf" target="_blank" onmouseover="rotateOnHover(10)" onmouseout="rotateOnLeave(10)" class="footer-link">
+                        yanis-wong
+                        <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer-f">
+            <div>
+                <p>Paris, France</p>
+                <div>
+                    <div id="available-light"></div>
+                    <p>Available</p>
+                </div>
+            </div>
+            <div>
+                <p>+33 7 67 88 73 80</p>
+                <p>©2026</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

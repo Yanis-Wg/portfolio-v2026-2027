@@ -1,0 +1,80 @@
+footer{
+    width: 100%;
+    height: fit-content;
+}
+footer>nav>ul{
+    width: 100%;
+    padding: 1rem 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+footer>nav>ul>li>a{
+    color: #000;
+}
+
+footer h2{
+    font-family: "SatoshiB";
+    font-size: var(--footerH2FontSize);
+}
+
+footer a{
+    font-size: var(--footerNavFontSize);
+    font-family: "SatoshiR";
+}
+
+footer>div{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+footer>div>div{
+    display: flex;
+}
+
+.black-line{
+    border-right: black solid 1px;
+}
+
+footer>nav>ul>li>h2{
+    padding-left: 0.875rem;
+}
+
+footer>nav>ul>li>a{
+    padding-left: 1.875rem;
+    padding-right: 0.875rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-link{
+    display: flex;
+    align-items: center;
+}
+
+.footer-f{
+    font-family: "SatoshiL";
+    font-size: 1rem;
+}
+
+.footer-f>div{
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+}
+
+.footer-f>div>div{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#available-light{
+    background-color: green;
+    border-radius: 55px;
+    width: 0.75rem;
+    height: 0.75rem;
+}

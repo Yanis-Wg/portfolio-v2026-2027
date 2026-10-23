@@ -1,0 +1,468 @@
+/* Font */
+@font-face {
+    font-family: "SatoshiLI";
+    src: url("../fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-LightItalic.ttf");
+}
+
+@font-face {
+    font-family: "SatoshiL";
+    src: url("../fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Light.ttf");
+}
+
+@font-face {
+    font-family: "SatoshiM";
+    src: url("../fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.ttf");
+}
+
+@font-face {
+    font-family: "SatoshiR";
+    src: url("../fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.ttf");
+}
+
+@font-face {
+    font-family: "SatoshiB";
+    src: url("../fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.ttf");
+}
+
+@font-face {
+    font-family: "LiterataM";
+    src: url("../fonts/Literata_Complete/Fonts/WEB/fonts/Literata-Medium.ttf");
+}
+
+/* Initialisation des paramètres généraux */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    padding: 2.75rem 2.625rem;
+    height: 100%;
+    width: 100%;
+    background-color: var(--dayModeBackgroundColor);
+}
+
+main{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+button{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+
+p, a, li, h1, h2, h3, h4, h5, button{
+    font-weight: normal;
+}
+
+li{
+    list-style: none;
+}
+
+.bgWhite{
+    background-color: var(--dayModeComposantBackgroundColor);
+    border-radius: 1.5rem;
+}
+
+.text-indent{
+    text-indent: 3.7rem;
+}
+
+#menuReseauxSociaux{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 3.5rem;
+    top: 3.5rem;
+    align-items: center;
+    gap: 1rem;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#menuReseauxSociaux>button{
+    padding: 0.75rem;
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    background:var(--dayModeButtonColor);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    border-radius: 12px;
+    z-index: 15;
+    border: none;
+}
+
+#menuReseauxSociaux>a{
+    position: fixed;
+    padding: 0.7rem;
+    display: flex;
+    background:var(--dayModeButtonColor);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    border-radius: 800px;
+    transition: ease 0.2s;
+}
+
+#menuReseauxSociaux>a:hover{
+    scale: 0.9;
+}
+
+#menuReseauxSociaux a:nth-child(2){
+    /* right: 10rem;
+    top: 2.5rem; */
+    opacity: 0;
+    right: 3.5rem;
+    top: 3.5rem;
+}
+#menuReseauxSociaux a:nth-child(3){
+    /* right: 8.75rem;
+    top: 6rem; */
+    opacity: 0;
+    right: 3.5rem;
+    top: 3.5rem;
+}
+#menuReseauxSociaux a:nth-child(4){
+    /* right: 6rem;
+    top: 8.7rem; */
+    opacity: 0;
+    right: 3.5rem;
+    top: 3.5rem;
+}
+#menuReseauxSociaux a:nth-child(5){
+    /* right: 2.5rem;
+    top: 10rem; */
+    opacity: 0;
+    right: 3.5rem;
+    top: 3.5rem;
+}
+
+.callToAction{
+    transition: 0.1s ease;
+    font-family: "SatoshiM";
+    display: flex;
+    width: 12rem;
+    height: 2.75rem;
+    font-size: 0.75rem;
+    color: black;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    background: rgba(217, 217, 217, 0.38);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    border-radius: 3.3rem;
+    margin: 1.2rem;
+}
+
+.callToAction:hover{
+    scale: 1.02;
+}
+
+.callToActionTwo{
+    transition: 0.1s ease;
+    font-family: "SatoshiM";
+    display: flex;
+    width: 3rem;
+    height: 2.75rem;
+    font-size: 0.75rem;
+    color: black;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    background: rgba(217, 217, 217, 0.38);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    border-radius: 3.3rem;
+    margin: 1.2rem;
+}
+
+.callToActionTwo:hover{
+    scale: 1.02;
+}
+
+.callToActionArrow{
+    transition: 0.3s ease;
+}
+
+#callToActionPlus{
+    transition: 0.3s ease;
+}
+
+.homeContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 100%; */
+    overflow: hidden;
+}
+
+.homeContainer-firstDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3.5rem 0 0 3.5rem;
+}
+
+.homeContainer-firstDiv>h1{
+    font-size: 1.5rem;
+    font-family: "LiterataM";
+}
+
+.homeContainer-firstDiv>p{
+    font-size: 1rem;
+    font-family: "SatoshiLI";
+}
+
+.homeContainer-secondDiv{
+    padding:0 0 0 3.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.homeContainer-secondDiv-firstSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    gap: 11.6rem;
+}
+
+.homeContainer-secondDiv-firstSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding-top: 3.38rem;
+}
+
+.homeContainer-secondDiv-firstSection>p{
+    font-size: 0.75rem;
+    font-family: "SatoshiLI";
+}
+
+.homeContainer-secondDiv-firstSection>div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.homeContainer-secondDiv-firstSection>div>p{
+    font-size: 0.75rem;
+    font-family: "SatoshiL";
+}
+
+.homeContainer-secondDiv-secondSection{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    position: relative;
+}
+
+.buttonInfo{
+position: absolute;
+width: 0.75rem;
+height: 0.75rem;
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 55rem;
+}
+
+.buttonInfoFirst{
+    bottom: 5.8rem;
+    right: 7.5rem;
+}
+.buttonInfoSecond{
+    top: 15.8rem;
+    right: 7.5rem;
+}
+
+
+.homeContainer-secondDiv-thirdSection{
+    font-family: "SatoshiL";
+    font-size: 0.75rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:end;
+}
+
+.homeContainer-secondDiv-thirdSection>div{
+    padding: 9rem 3.5rem 0 0;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .projectContainer{
+    display: flex;
+    gap: 1rem;
+} */
+
+.projectContainer{
+    display: grid;
+    grid-template-columns: 3fr repeat(5,1fr);
+    gap: 1rem;
+}
+
+.projectContainer-projects{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 18.75rem;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.projectContainer .projectContainer-projects:first-child{
+    width: 100%;
+}
+
+.projectContainer .projectContainer-projects:last-child{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectContainer .projectContainer-projects:last-child>a{
+    width: 2.75rem;
+    height: 2.75rem;
+}
+
+.projectContainer-projects>div{
+    display: flex;
+    width: 100%;
+}
+
+.projectContainer-projects>div>h2{
+    font-size: 1.5rem;
+    font-family: "LiterataM";
+    padding: 1.2rem;
+}
+
+.projectContainer-projects div:last-child{
+    justify-content: end;
+}
+
+.skillsContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-direction: row;
+    gap: 1.63rem;
+}
+
+.skillsContainer-part{
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+    /* width: max-content; */
+    height: 45rem;
+    background-color: #FFFFFF;
+    border-radius: 1.5rem;
+}
+
+.skillsContainer-part>h2{
+    font-family: "LiterataM";
+    font-size: 1.5rem;
+}
+
+.allProjectContainer{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.allProjectContainer>h2{
+    font-size: 1.5rem;
+    font-family: "LiterataM";
+}
+/* TEMOIGNAGES */
+.testimonyContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonyContainer-cards{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    gap: 1.68rem;
+}
+
+.testimonyContainer-card{
+    width: 22rem;
+    height: 32rem;
+    background-color: white;
+    border-radius: 1.5rem;
+    padding: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex-shrink: 0;
+}
+
+.testimonyContainer-card>div>h2{
+    font-family: "SatoshiB";
+    font-size: 1.25rem;
+}
+
+.testimonyContainer-card>p{
+    font-family: "SatoshiR";
+    font-size: 0.75rem;
+}
+
+.testimonyContainer-card>img{
+    width: 5.31rem;
+    height: 5.31rem;
+    background-color: grey;
+    border-radius: 55rem;
+}
+
+.italic{
+    font-family: "SatoshiLi";
+}
+
+.buttonNextOrPrevious{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: end;
+    gap: 1.5rem;
+    padding: 0.875rem 0;
+}
+
+.buttonNextOrPrevious>button{
+    border: none;
+    width: 4rem;
+    height: 2.75rem;
+    background: rgba(217, 217, 217, 0.38);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    border-radius: 53px;
+}
+
+
