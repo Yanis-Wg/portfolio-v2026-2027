@@ -17,6 +17,7 @@ header>nav{
     z-index: 10;
     transition: 0.3s ease;
     z-index: 25;
+    cursor: pointer;
 }
 
 header nav>ul{
@@ -46,7 +47,7 @@ header nav>ul>li>a{
     font-family: "SatoshiLI";
     font-size: 0.75rem;
     color: grey;
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 1rem 0.5rem 1rem;
 }
 
 .preheader-container>button{

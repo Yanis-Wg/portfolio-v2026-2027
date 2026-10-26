@@ -42,7 +42,7 @@ html{
 }
 
 body{
-    padding: 1.75rem 2.625rem 2.75rem 2.625rem;
+    padding: 1.75rem 2.625rem 0.75rem 2.625rem;
     height: 100%;
     width: 100%;
     background-color: var(--dayModeBackgroundColor);
