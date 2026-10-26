@@ -42,7 +42,7 @@ html{
 }
 
 body{
-    padding: 2.75rem 2.625rem;
+    padding: 1.75rem 2.625rem 2.75rem 2.625rem;
     height: 100%;
     width: 100%;
     background-color: var(--dayModeBackgroundColor);
@@ -374,7 +374,7 @@ li{
     flex-direction: column;
     padding: 1.2rem 2rem;
     /* width: max-content; */
-    height: 45rem;
+    height: 42.5rem;
     background-color: #FFFFFF;
     border-radius: 1.5rem;
 }
@@ -382,12 +382,13 @@ li{
 .skillsContainer-part-app{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 1rem;
+    gap: 1.5rem;
     /* padding: 0 1rem; */
     align-items: baseline;
 }
 
 .skillsContainer-app>div{
+    padding-bottom: 0.2rem;
     display: grid;
     align-items: end;
     grid-template-columns: 1fr 2fr;
@@ -412,7 +413,7 @@ li{
     
 .skillsContainer-app>p{
     font-family: "SatoshiR";
-    font-size: 1rem;
+    font-size: 0.75rem;
 }
 
 .allProjectContainer{
@@ -576,4 +577,3 @@ li{
     opacity: 0;
     transition: 0.3s ease-in;
 }
-
