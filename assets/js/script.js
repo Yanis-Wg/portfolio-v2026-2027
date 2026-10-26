@@ -303,15 +303,18 @@ function changeDispositionProjets(){
     switch(position){
         case 0 :
             projects[0].style.gridTemplateColumns="3fr 1fr 1fr 1fr 1fr 1fr"
-            callToActionP[5].style.display="none"
+            // callToActionP[5].style.display="none"
             callToActionP[0].style.display="block"
-            callToAction[5].style.width="3rem"
+            callToActionP[0].style.opacity="1"
+            // callToAction[5].style.width="3rem"
             callToAction[0].style.width="12rem"
             break
         case 1 :
             projects[0].style.gridTemplateColumns="1fr 3fr 1fr 1fr 1fr 1fr"
             callToActionP[0].style.display="none"
             callToActionP[1].style.display="block"
+            callToActionP[0].style.opacity="0"
+            callToActionP[1].style.opacity="1"            
             callToAction[0].style.width="3rem"
             callToAction[1].style.width="12rem"
             break
@@ -319,6 +322,8 @@ function changeDispositionProjets(){
             projects[0].style.gridTemplateColumns="1fr 1fr 3fr 1fr 1fr 1fr"
             callToActionP[1].style.display="none"
             callToActionP[2].style.display="block"
+            callToActionP[1].style.opacity="0"
+            callToActionP[2].style.opacity="1"
             callToAction[1].style.width="3rem"
             callToAction[2].style.width="12rem"
             break
@@ -326,6 +331,8 @@ function changeDispositionProjets(){
             projects[0].style.gridTemplateColumns="1fr 1fr 1fr 3fr 1fr 1fr"
             callToActionP[2].style.display="none"
             callToActionP[3].style.display="block"
+            callToActionP[2].style.opacity="0"
+            callToActionP[3].style.opacity="1"
             callToAction[2].style.width="3rem"
             callToAction[3].style.width="12rem"
             break
@@ -333,12 +340,15 @@ function changeDispositionProjets(){
             projects[0].style.gridTemplateColumns="1fr 1fr 1fr 1fr 3fr 1fr"
             callToActionP[3].style.display="none"
             callToActionP[4].style.display="block"
+            callToActionP[3].style.opacity="0"
+            callToActionP[4].style.opacity="1"
             callToAction[3].style.width="3rem"
             callToAction[4].style.width="12rem"
             break
         case 5 :
             projects[0].style.gridTemplateColumns="1fr 1fr 1fr 1fr 1fr 3fr"
             callToActionP[4].style.display="none"
+            callToActionP[4].style.opacity="0"
             // callToActionP[5].style.display="block"
             callToAction[4].style.width="3rem"
             // callToAction[5].style.width="12rem"
@@ -353,4 +363,28 @@ setInterval(() => {
     }else{
         position++
     }
-}, 4000);
+}, 6000);
+
+function initTestimonyCarousel() {
+    const track = document.querySelector(".testimonyContainer-cards");
+    const prev = document.getElementById("testimonyPrev");
+    const next = document.getElementById("testimonyNext");
+    if (!track || !prev || !next) return;
+
+    // largeur d'une carte + l'espace (gap) entre deux cartes
+    function getStep() {
+        const card = track.querySelector(".testimonyContainer-card");
+        const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+        return card.offsetWidth + gap;
+    }
+
+    next.addEventListener("click", () => {
+        track.scrollBy({ left: getStep(), behavior: "smooth" });
+    });
+
+    prev.addEventListener("click", () => {
+        track.scrollBy({ left: -getStep(), behavior: "smooth" });
+    });
+}
+
+document.addEventListener("DOMContentLoaded", initTestimonyCarousel);

@@ -170,7 +170,16 @@ li{
 
 .isDisplay{
     display: none;
+    transition: 0.5s ease;
+    opacity: 0;
 }
+
+.firstDisplayP{
+    display: block;
+    transition: 1s ease;
+    opacity: 1;
+}
+
 
 .callToAction:hover{
     scale: 1.02;
@@ -192,7 +201,11 @@ li{
     backdrop-filter: blur(2px);
     border-radius: 3.3rem;
     margin: 1.2rem;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
+}
+
+.firstDisplayPro{
+    width: 12rem;
 }
 
 .callToActionTwo:hover{
@@ -326,7 +339,7 @@ border-radius: 55rem;
     display: grid;
     grid-template-columns: 3fr repeat(5,1fr);
     gap: 1rem;
-    transition: 1s ease;
+    transition: 2s ease;
 }
 
 .projectContainer-projects{
