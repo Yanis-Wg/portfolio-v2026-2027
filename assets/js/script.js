@@ -388,3 +388,35 @@ function initTestimonyCarousel() {
 }
 
 document.addEventListener("DOMContentLoaded", initTestimonyCarousel);
+
+let popOrNot1=0
+let popOrNot2=0
+function whatItMean(number){
+    let bar1 = document.getElementsByClassName("homeContainer-bar1")
+    let text1 = document.getElementsByClassName("homeContainer-texte1")
+    let bar2 = document.getElementsByClassName("homeContainer-bar2")
+    let text2 = document.getElementsByClassName("homeContainer-texte2")
+    // texte 1
+    if(number==1){
+        if(popOrNot1%2==0){
+            bar1[0].style.opacity="1"
+            text1[0].style.opacity="1"
+            popOrNot1++
+        }else if(popOrNot1!=0){
+            bar1[0].style.opacity="0"
+            text1[0].style.opacity="0"
+            popOrNot1++
+        }
+    }else if(number==2){
+        if(popOrNot2%2==0){
+            bar2[0].style.opacity="1"
+            text2[0].style.opacity="1"
+            popOrNot2++
+        }else if(popOrNot2!=0){
+            bar2[0].style.opacity="0"
+            text2[0].style.opacity="0"
+            popOrNot2++
+        }
+    }
+    // text2
+}

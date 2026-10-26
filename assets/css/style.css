@@ -294,25 +294,6 @@ li{
     position: relative;
 }
 
-.buttonInfo{
-position: absolute;
-width: 0.75rem;
-height: 0.75rem;
-background: #FFFFFF;
-border: 1px solid #000000;
-border-radius: 55rem;
-}
-
-.buttonInfoFirst{
-    bottom: 5.8rem;
-    right: 7.5rem;
-}
-.buttonInfoSecond{
-    top: 15.8rem;
-    right: 7.5rem;
-}
-
-
 .homeContainer-secondDiv-thirdSection{
     font-family: "SatoshiL";
     font-size: 0.75rem;
@@ -520,3 +501,79 @@ border-radius: 55rem;
 .buttonNextOrPrevious>button:hover{
     scale: 0.94;
 }
+
+/* SIGNIFICATION FLEUR ET SYMBOLE */
+.buttonInfo{
+    position: absolute;
+    width: 0.75rem;
+    height: 0.75rem;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 55rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.buttonInfoFirst{
+    top: 15.8rem;
+    right: 7.5rem;
+}
+
+.buttonInfoSecond{
+    bottom: 5.8rem;
+    right: 7.5rem;
+}
+
+.homeContainer-bar1 {
+    width: 11rem;
+    border-bottom: solid 1px black;
+    position: absolute;
+    rotate: -45.1deg;
+    right: -1.5rem;
+    top: 24.5vh;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s ease-in;
+}
+
+.homeContainer-texte1{
+    position: absolute;
+    width: 15.3rem;
+    right: -15.15rem;
+    top: 8.7vh;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    padding: 7px 10px;
+    font-family: "SatoshiLI";
+    font-size: 0.75rem;
+    z-index: 6;
+    opacity: 0;
+    transition: 0.3s ease-in;
+}
+
+.homeContainer-bar2 {
+    width: 7.8rem;
+    border-bottom: solid 1px black;
+    position: absolute;
+    rotate: -15.8deg;
+    right: -0.07rem;
+    bottom: 14.55vh;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s ease-in;
+}
+
+.homeContainer-texte2{
+    position: absolute;
+    right: -14.2rem;
+    bottom: 16.7vh;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    padding: 7px 10px;
+    font-family: "SatoshiLI";
+    font-size: 0.75rem;
+    z-index: 6;
+    opacity: 0;
+    transition: 0.3s ease-in;
+}
+
