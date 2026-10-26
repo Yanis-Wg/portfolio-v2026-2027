@@ -154,6 +154,7 @@ li{
     font-family: "SatoshiM";
     display: flex;
     width: 12rem;
+    /* width: 3rem; */
     height: 2.75rem;
     font-size: 0.75rem;
     color: black;
@@ -165,6 +166,10 @@ li{
     backdrop-filter: blur(2px);
     border-radius: 3.3rem;
     margin: 1.2rem;
+}
+
+.isDisplay{
+    display: none;
 }
 
 .callToAction:hover{
@@ -187,6 +192,7 @@ li{
     backdrop-filter: blur(2px);
     border-radius: 3.3rem;
     margin: 1.2rem;
+    transition: 0.3s ease;
 }
 
 .callToActionTwo:hover{
@@ -320,6 +326,7 @@ border-radius: 55rem;
     display: grid;
     grid-template-columns: 3fr repeat(5,1fr);
     gap: 1rem;
+    transition: 1s ease;
 }
 
 .projectContainer-projects{
@@ -371,16 +378,47 @@ border-radius: 55rem;
 .skillsContainer-part{
     display: flex;
     flex-direction: column;
-    padding: 1.2rem;
+    padding: 1.2rem 2rem;
     /* width: max-content; */
     height: 45rem;
     background-color: #FFFFFF;
     border-radius: 1.5rem;
 }
 
+.skillsContainer-part-app{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    /* padding: 0 1rem; */
+    align-items: baseline;
+}
+
+.skillsContainer-app>div{
+    display: grid;
+    align-items: end;
+    grid-template-columns: 1fr 2fr;
+}
+
 .skillsContainer-part>h2{
     font-family: "LiterataM";
     font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.skillsContainer-app>div>h3{
+    font-family: "SatoshiB";
+    font-size: 1rem;
+    border-left: 2px solid black;
+    padding-left: 0.5rem;
+}
+
+.skillsContainer-app>div>img{
+    padding-right: 0.8rem;
+}
+    
+.skillsContainer-app>p{
+    font-family: "SatoshiR";
+    font-size: 1rem;
 }
 
 .allProjectContainer{
@@ -469,5 +507,3 @@ border-radius: 55rem;
 .buttonNextOrPrevious>button:hover{
     scale: 0.94;
 }
-
-

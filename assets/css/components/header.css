@@ -4,10 +4,14 @@ header{
     justify-content: center;
     align-items: center;
     position: fixed;
-    top : -2.5rem;
+    top : 1rem;
     font-family: "SatoshiB";
     font-size: var(--headerNavFontSize);
     z-index: 10;
+    transition: 0.3s ease;
+}
+
+header-a{
 }
 
 header nav>ul{

@@ -275,3 +275,82 @@ function socialMediaMenuAnimationOpenOrClose(){
         openOrClose++
     }
 }
+
+// function updateProjectButtons() {
+
+//     let projects = document.querySelectorAll(".projectContainer-projects");
+
+//     projects.forEach(project => {
+
+//         let button = project.querySelector(".callToAction");
+//         let width = project.getBoundingClientRect().width;
+
+//         if(width > 100){
+//             button.classList.add("isLarge");
+//         }else{
+//             button.classList.remove("isLarge");
+//         }
+
+//     });
+// }
+
+let position=0
+
+function changeDispositionProjets(){
+    let projects = document.getElementsByClassName("projectContainer")
+    let callToAction = document.getElementsByClassName("callToActionTwo")
+    let callToActionP = document.getElementsByClassName("isDisplay")
+    switch(position){
+        case 0 :
+            projects[0].style.gridTemplateColumns="3fr 1fr 1fr 1fr 1fr 1fr"
+            callToActionP[5].style.display="none"
+            callToActionP[0].style.display="block"
+            callToAction[5].style.width="3rem"
+            callToAction[0].style.width="12rem"
+            break
+        case 1 :
+            projects[0].style.gridTemplateColumns="1fr 3fr 1fr 1fr 1fr 1fr"
+            callToActionP[0].style.display="none"
+            callToActionP[1].style.display="block"
+            callToAction[0].style.width="3rem"
+            callToAction[1].style.width="12rem"
+            break
+        case 2 : 
+            projects[0].style.gridTemplateColumns="1fr 1fr 3fr 1fr 1fr 1fr"
+            callToActionP[1].style.display="none"
+            callToActionP[2].style.display="block"
+            callToAction[1].style.width="3rem"
+            callToAction[2].style.width="12rem"
+            break
+        case 3 :
+            projects[0].style.gridTemplateColumns="1fr 1fr 1fr 3fr 1fr 1fr"
+            callToActionP[2].style.display="none"
+            callToActionP[3].style.display="block"
+            callToAction[2].style.width="3rem"
+            callToAction[3].style.width="12rem"
+            break
+        case 4 :
+            projects[0].style.gridTemplateColumns="1fr 1fr 1fr 1fr 3fr 1fr"
+            callToActionP[3].style.display="none"
+            callToActionP[4].style.display="block"
+            callToAction[3].style.width="3rem"
+            callToAction[4].style.width="12rem"
+            break
+        case 5 :
+            projects[0].style.gridTemplateColumns="1fr 1fr 1fr 1fr 1fr 3fr"
+            callToActionP[4].style.display="none"
+            // callToActionP[5].style.display="block"
+            callToAction[4].style.width="3rem"
+            // callToAction[5].style.width="12rem"
+            break
+    }
+}
+
+setInterval(() => {
+    changeDispositionProjets();
+    if(position>5){
+        position=0
+    }else{
+        position++
+    }
+}, 4000);

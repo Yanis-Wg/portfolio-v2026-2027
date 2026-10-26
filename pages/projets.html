@@ -19,26 +19,53 @@
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.27/dist/lenis.css">
     <script src="https://unpkg.com/lenis@1.3.27/dist/lenis.min.js"></script> 
     <script>new Lenis({ autoRaf: true, autoToggle: true, anchors: true, allowNestedScroll: true, naiveDimensions: true, stopInertiaOnNavigate: true })</script>
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/DrawSVGPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/EaselPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/GSDevTools.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/InertiaPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/MotionPathHelper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/MorphSVGPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Observer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Physics2DPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/PhysicsPropsPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/PixiPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrambleTextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/TextPlugin.min.js"></script>
+
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->    
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/EasePack.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomEase.min.js"></script>
+    <!-- GSAP External code -->
+     <script src="../assets/js/gsapAnimation.js"></script>
 </head>
 <body>
     <!-- HEADER -->
-    <header>
+    <header onclick="headerAnimation()" id="header-container">
         <nav>
             <ul>
                 <li>
-                    <a href="../index.html">Accueil</a>
+                    <a class="header-a" href="">Accueil</a>
                 </li>
                 <li>
-                    <a href="./projets.html">Projets</a>
+                    <a class="header-a" href="">Projets</a>
                 </li>
                 <li>
-                    <a href="">Compétences</a>
+                    <a class="header-a" href="">Compétences</a>
                 </li>
                 <li>
-                    <a href="">Témoignages</a>
+                    <a class="header-a" href="">Témoignages</a>
                 </li>
                 <li>
-                    <a href="">Contact</a>
+                    <a class="header-a" href="">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -208,7 +235,7 @@
                         </h2>
                     </div>
                     <div>
-                        <a onmouseover="rotateOnHover(6)" onmouseout="rotateOnLeave(6)" class="callToAction" href="./assets/docs/">
+                        <a onmouseover="rotateOnHover(7)" onmouseout="rotateOnLeave(7)" class="callToAction" href="./assets/docs/">
                             <p>EN SAVOIR PLUS</p>
                             <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="arrow">
                         </a> 
@@ -225,28 +252,28 @@
             <ul>
                 <li class="black-line">
                     <h2>Mail</h2>
-                    <a href="mailto:yanis.wong.pro@gmail.com" onmouseover="rotateOnHover(7)" onmouseout="rotateOnLeave(7)" class="footer-link">
+                    <a href="mailto:yanis.wong.pro@gmail.com" onmouseover="rotateOnHover(8)" onmouseout="rotateOnLeave(8)" class="footer-link">
                         yanis.wong.pro@gmail.com
                         <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="">
                     </a>
                 </li>
                 <li class="black-line">
                     <h2>GitHub</h2>
-                    <a href="https://github.com/Yanis-Wg" target="_blank" onmouseover="rotateOnHover(8)" onmouseout="rotateOnLeave(8)" class="footer-link">
+                    <a href="https://github.com/Yanis-Wg" target="_blank" onmouseover="rotateOnHover(9)" onmouseout="rotateOnLeave(9)" class="footer-link">
                         yanis_wg
                         <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="">
                     </a>
                 </li>
                 <li class="black-line">
                     <h2>LinkedIn</h2>
-                    <a href="https://www.linkedin.com/in/yaniswong04/" target="_blank" onmouseover="rotateOnHover(9)" onmouseout="rotateOnLeave(9)" class="footer-link">
+                    <a href="https://www.linkedin.com/in/yaniswong04/" target="_blank" onmouseover="rotateOnHover(10)" onmouseout="rotateOnLeave(10)" class="footer-link">
                         yanis-wong
                         <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="">
                     </a>
                 </li>
                 <li>
                     <h2>Télécharger mon CV</h2>
-                    <a href="./assets/docs/CV_UI_UX_Designer_Yanis_WONG.pdf" target="_blank" onmouseover="rotateOnHover(10)" onmouseout="rotateOnLeave(10)" class="footer-link">
+                    <a href="./assets/docs/CV_UI_UX_Designer_Yanis_WONG.pdf" target="_blank" onmouseover="rotateOnHover(11)" onmouseout="rotateOnLeave(11)" class="footer-link">
                         yanis-wong
                         <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="">
                     </a>
