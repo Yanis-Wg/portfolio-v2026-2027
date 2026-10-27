@@ -760,3 +760,16 @@ li{
         flex-direction: column;
     }
 }
+
+@media(min-width:1300px){
+    .homeContainer-bar1 {
+        width: 11rem;
+        rotate: -46.5deg;
+        right: -1.6rem;
+        top: 25.7vh;
+    }
+    .homeContainer-bar2 {
+        rotate: -12.8deg;
+        bottom: 15vh;
+    }
+}
