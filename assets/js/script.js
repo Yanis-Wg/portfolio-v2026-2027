@@ -356,14 +356,14 @@ function changeDispositionProjets(){
     }
 }
 
-setInterval(() => {
-    changeDispositionProjets();
-    if(position>5){
-        position=0
-    }else{
-        position++
-    }
-}, 6000);
+// setInterval(() => {
+//     changeDispositionProjets();
+//     if(position>5){
+//         position=0
+//     }else{
+//         position++
+//     }
+// }, 6000);
 
 function initTestimonyCarousel() {
     const track = document.querySelector(".testimonyContainer-cards");
@@ -407,6 +407,7 @@ function whatItMean(number){
             text1[0].style.opacity="0"
             popOrNot1++
         }
+        // text2
     }else if(number==2){
         if(popOrNot2%2==0){
             bar2[0].style.opacity="1"
@@ -418,5 +419,52 @@ function whatItMean(number){
             popOrNot2++
         }
     }
-    // text2
 }
+
+function dayOrNightMode(){
+    
+}
+
+let intervalId = null;
+const isDesktop = window.matchMedia("(min-width: 801px)");
+
+function resetDispositionProjets() {
+    const projects = document.querySelector(".projectContainer");
+    const callToAction = document.querySelectorAll(".callToActionTwo");
+    const callToActionP = document.querySelectorAll(".isDisplay");
+
+    // Vider les styles inline : le CSS reprend la main (y compris la media query)
+    projects.style.gridTemplateColumns = "";
+    callToAction.forEach((el) => (el.style.width = ""));
+    callToActionP.forEach((el) => {
+        el.style.display = "";
+        el.style.opacity = "";
+    });
+}
+
+function startAnimation() {
+    if (intervalId !== null) return; // évite de cumuler plusieurs intervals
+
+    intervalId = setInterval(() => {
+        changeDispositionProjets();
+        position = (position + 1) % 6; // états 0 à 5
+    }, 6000);
+}
+
+function stopAnimation() {
+    clearInterval(intervalId);
+    intervalId = null;
+}
+
+function handleScreenChange(e) {
+    if (e.matches) {
+        startAnimation();
+    } else {
+        stopAnimation();
+        position = 0;
+        resetDispositionProjets();
+    }
+}
+
+handleScreenChange(isDesktop);
+isDesktop.addEventListener("change", handleScreenChange);

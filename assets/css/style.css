@@ -473,6 +473,7 @@ li{
     height: 5.31rem;
     background-color: grey;
     border-radius: 55rem;
+    border: 1px solid darkgrey;
 }
 
 .italic{
@@ -576,4 +577,174 @@ li{
     z-index: 6;
     opacity: 0;
     transition: 0.3s ease-in;
+}
+
+@media (max-width: 1034px) {
+    .homeContainer-bar1 {
+        width: 11.6rem;
+        rotate: -47.1deg;
+        right: -1.8rem;
+        top: 26vh;
+    }
+    .homeContainer-bar2 {
+        rotate: -12.2deg;
+        bottom: 15vh;
+    }
+    .projectContainer-projects>div>h2 {
+        font-size: 1.2rem;
+    }
+    .allProjectContainer>h2 {
+        font-size: 1.2rem;
+    }
+    .skillsContainer-part>h2 {
+        font-size: 1.2rem;
+    }
+    .skillsContainer-part {
+        padding: 1.2rem 1.5rem;
+        height: 44.5rem;
+    }
+    .skillsContainer {
+        overflow: scroll;
+    }
+    footer>nav>ul>li>h2{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 800px){
+    .homeContainer-firstDiv {
+        padding: 2.5rem 0 0 2.5rem;
+    }
+    .homeContainer-firstDiv>h1 {
+        font-size: 1.2rem;
+    }
+    .homeContainer-firstDiv>p {
+        font-size: 0.75rem;
+    }
+    .homeContainer-secondDiv {
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    .homeContainer-secondDiv-firstSection{
+        display: none;
+    }
+    .homeContainer-secondDiv-thirdSection{
+        display: none;
+    }
+    .homeContainer-texte1 {
+        width: 10.3rem;
+        right: -8.15rem;
+    }
+    .homeContainer-bar1 {
+        width: 9.5rem;
+        rotate: -51.1deg;
+        right: 0.3rem;
+        top: 12.6rem;
+    }
+    .homeContainer-texte2{
+        width: 10.3rem;
+        right: -8.15rem;
+    }
+    .homeContainer-bar2 {
+        rotate: -16.2deg;
+        right: 1.93rem;
+        width: 5.8rem;
+    }
+    body>header>nav {
+        top: 2rem;
+    }
+    .projectContainer {
+        grid-template-columns: repeat(3, 3fr);
+        gap: 1.5rem;
+    }
+    body>footer>nav>ul {
+        padding: 1rem 0;
+    }
+    footer>nav>ul>li>h2 {
+        padding-left: 0.75rem;
+        font-size: 0.8rem;
+    }
+    .footer-link {
+        font-size: 0.75rem;
+    }
+    footer>nav>ul>li>a {
+        padding-left: 1rem;
+        padding-right: 0.5rem;
+    }
+    footer>.footer-f {
+        font-size: 0.75rem;
+    }
+}
+
+@media(max-width:450px){
+    .projectContainer {
+        display: none;
+    }
+    body>footer>nav>ul{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    ul>.black-line {
+        border-right: none;
+        border-bottom: 1px solid black;
+        padding-bottom: 0.5rem;
+    }
+    footer>.footer-f>div {
+        gap: 1rem;
+    }
+    .skillsContainer-part-app {
+        gap: 0.75rem;
+    }
+    .skillsContainer-part {
+        height: 40.5rem;
+    }
+    .skillsContainer-part>h2 {
+        padding-bottom: 1rem;
+    }
+    body {
+        padding: 1.75rem 1.625rem 0.75rem 1.625rem;
+    }
+    .homeContainer-firstDiv {
+        padding: 1.5rem 0 0 1.5rem;
+    }
+    body>header>nav {
+        display: none;
+    }
+    .buttonInfo{
+        display: none;
+    }
+    #menuReseauxSociaux {
+        right: 1.5rem;
+    }
+    .testimonyContainer-card {
+        width: 100%;
+    }
+}
+
+@media(max-width:380px){
+    .homeContainer-secondDiv-secondSection>img{
+        width: 80vw;
+    }
+    .homeContainer-firstDiv>h1 {
+        font-size: 1rem;
+    }
+    .homeContainer-firstDiv {
+        padding: 1.5rem 1.5rem 0 1.5rem;
+    }
+    .skillsContainer-app>div>h3 {
+        font-size: 0.75rem;
+    }
+    .skillsContainer-part {
+        height: 38.5rem;
+    }
+    .italic {
+        font-size: 0.9rem;
+    }
+    .testimonyContainer-card>div>h2 {
+        font-size: 1rem;
+    }
+    .skillsContainer-app>div>img {
+        width: 2rem;
+    }
 }

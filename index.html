@@ -60,19 +60,19 @@
         <nav onclick="headerAnimation()" id="header-container">
             <ul>
                 <li>
-                    <a class="header-a" href="">Accueil</a>
+                    <a class="header-a" href="#homeAnchor">Accueil</a>
                 </li>
                 <li>
-                    <a class="header-a" href="">Projets</a>
+                    <a class="header-a" href="#projectsAnchor">Projets</a>
                 </li>
                 <li>
-                    <a class="header-a" href="">Compétences</a>
+                    <a class="header-a" href="#skillsAnchor">Compétences</a>
                 </li>
                 <li>
-                    <a class="header-a" href="">Témoignages</a>
+                    <a class="header-a" href="#testimonyAnchor">Témoignages</a>
                 </li>
                 <li>
-                    <a class="header-a" href="">Contact</a>
+                    <a class="header-a" href="#contactAnchor">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -97,7 +97,7 @@
     </nav>
     <!-- MAIN -->
     <main>
-        <section class="homeContainer bgWhite">
+        <section id="homeAnchor" class="homeContainer bgWhite">
             <!-- Présentation -->
              <!-- Première Partie -->
             <div class="homeContainer-firstDiv">
@@ -169,11 +169,11 @@
             <div class="projectContainer-projects bgWhite">
                 <div class="a définir">
                     <h2>
-                        Projet 1
+                        Portfolio 2024
                     </h2>
                 </div>
                 <div class="a définir">
-                    <a onmouseover="rotateOnHover(1)" onmouseout="rotateOnLeave(1)" class="callToActionTwo firstDisplayPro" href="./assets/docs/">
+                    <a onmouseover="rotateOnHover(1)" onmouseout="rotateOnLeave(1)" class="callToActionTwo firstDisplayPro" href="./pages/projet_template.html">
                         <p class="isDisplay firstDisplayP">EN SAVOIR PLUS</p>
                         <img class="callToActionArrow" src="./assets/images/icons/arrow.svg" alt="arrow">
                     </a> 
@@ -182,7 +182,7 @@
             <div class="projectContainer-projects bgWhite">
                 <div class="a définir">
                     <h2>
-                        Projet 1
+                        Pokemon Arena
                     </h2>
                 </div>
                 <div class="a définir">
@@ -195,7 +195,7 @@
             <div class="projectContainer-projects bgWhite">
                 <div class="a définir">
                     <h2>
-                        Projet 1
+                        Fig
                     </h2>
                 </div>
                 <div class="a définir">
@@ -208,7 +208,7 @@
             <div class="projectContainer-projects bgWhite">
                 <div class="a définir">
                     <h2>
-                        Projet 1
+                        Affiche Santé & Bien être
                     </h2>
                 </div>
                 <div class="a définir">
@@ -221,7 +221,7 @@
             <div class="projectContainer-projects bgWhite">
                 <div class="a définir">
                     <h2>
-                        Projet 1
+                        BE
                     </h2>
                 </div>
                 <div class="a définir">
@@ -237,7 +237,7 @@
                 </a> 
             </div>
         </section>
-        <section class="skillsContainer">
+        <section id="skillsAnchor" class="skillsContainer">
             <div class="skillsContainer-part">
                 <h2>Développement</h2>
                 <div class="skillsContainer-part-app">
@@ -475,17 +475,17 @@
                 </div>
             </div>
         </section>
-        <section class="allProjectContainer">
+        <section id="projectsAnchor" class="allProjectContainer">
             <h2>Tous mes projets</h2>
             <a onmouseover="rotateOnHover(6)" onmouseout="rotateOnLeave(6)" class="callToAction" href="./pages/projets.html">
                 <p>DÉCOUVRIR</p>
                 <img class="callToActionArrow" src="./assets/images/icons/arrow.svg" alt="arrow">
             </a> 
         </section>
-        <section class="testimonyContainer">
+        <section id="testimonyAnchor" class="testimonyContainer">
             <div class="testimonyContainer-cards">
                 <div class="testimonyContainer-card">
-                    <img src="" alt="">
+                    <img src="./assets/images/home/default_pic1.jpe" alt="">
                     <div>
                         <h2>Laurent Houdard</h2>
                         <p class="italic">Ingénieur en Recherche & Développement</p>
@@ -494,7 +494,7 @@
                     <p>Yanis possédait déjà une bonne maîtrise des technologies web actuelles et a montré une réelle volonté d’acquérir de nouvelles compétences. Il a fait preuve d’une grande autonomie, même si je pense qu’il a encore le potentiel pour aller plus loin. De plus, il s’est montré sérieux, travailleur, agréable et respectueux avec ses collègues.</p>
                 </div>
                 <div class="testimonyContainer-card">
-                    <img src="" alt="">
+                    <img src="./assets/images/home/default_pic2.jpe" alt="">
                     <div>
                         <h2>Brice Vincesini</h2>
                         <p class="italic">Responsable Marketing et Community Manager</p>
@@ -503,7 +503,7 @@
                     <p>Nous avons également été impressionnés par sa capacité à résoudre les problèmes rapidement, sa collaboration efficace avec différentes équipes et sa curiosité intellectuelle, qui ont fait de lui un atout pour l’entreprise.</p>
                 </div>
                 <div class="testimonyContainer-card">
-                    <img src="" alt="">
+                    <img src="./assets/images/home/default_pic3.jpe" alt="">
                     <div>
                         <h2>Raphael Cadete</h2>
                         <p class="italic">Développeur Fullstack</p>
@@ -512,7 +512,7 @@
                     <p>Toujours désireux d’élargir ses compétences, il apprend de nouvelles bibliothèques et langages avec proactivité. Cette soif d’apprendre témoigne de son sérieux et de son engagement, et profite autant à son développement qu’à l’enrichissement de l’expertise collective de l’équipe.</p>
                 </div>
                 <div class="testimonyContainer-card">
-                    <img src="" alt="">
+                    <img src="./assets/images/home/default_pic0.jpe" alt="">
                     <div>
                         <h2>Inès Temmar</h2>
                         <p class="italic">Développeur Fullstack</p>
@@ -521,7 +521,7 @@
                     <p>Toujours désireux d’élargir ses compétences, il apprend de nouvelles bibliothèques et langages avec proactivité. Cette soif d’apprendre témoigne de son sérieux et de son engagement, et profite autant à son développement qu’à l’enrichissement de l’expertise collective de l’équipe.</p>
                 </div>
                 <div class="testimonyContainer-card">
-                    <img src="" alt="">
+                    <img src="./assets/images/home/default_pic4.jpe" alt="">
                     <div>
                         <h2>Laurent Houdard</h2>
                         <p class="italic">Ingénieur en Recherche & Développement</p>
@@ -542,7 +542,7 @@
         </section>
     </main>
     <!-- FOOTER -->
-    <footer>
+    <footer id="contactAnchor">
         <nav>
             <ul>
                 <li class="black-line">
