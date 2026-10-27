@@ -539,9 +539,9 @@ li{
 }
 
 .homeContainer-texte1{
+    width: 14.4rem;
     position: absolute;
-    width: 15.3rem;
-    right: -15.15rem;
+    right: -14.15rem;
     top: 8.7vh;
     background-color: #FFFFFF;
     border: 1px solid black;
@@ -565,9 +565,10 @@ li{
     transition: 0.3s ease-in;
 }
 
-.homeContainer-texte2{
+.homeContainer-texte2 {
+    width: 14.4rem;
     position: absolute;
-    right: -14.2rem;
+    right: -14.15rem;
     bottom: 16.7vh;
     background-color: #FFFFFF;
     border: 1px solid black;
@@ -584,11 +585,11 @@ li{
         width: 11.6rem;
         rotate: -47.1deg;
         right: -1.8rem;
-        top: 26vh;
+        top: 25vh;
     }
     .homeContainer-bar2 {
-        rotate: -12.2deg;
-        bottom: 15vh;
+        rotate: -15.2deg;
+        bottom: 14.7vh;
     }
     .projectContainer-projects>div>h2 {
         font-size: 1.2rem;
@@ -637,17 +638,17 @@ li{
         right: -8.15rem;
     }
     .homeContainer-bar1 {
-        width: 9.5rem;
+        width: 9rem;
         rotate: -51.1deg;
-        right: 0.3rem;
-        top: 12.6rem;
+        right: 0.4rem;
+        top: 12.7rem;
     }
     .homeContainer-texte2{
         width: 10.3rem;
         right: -8.15rem;
     }
     .homeContainer-bar2 {
-        rotate: -16.2deg;
+        rotate: -20.2deg;
         right: 1.93rem;
         width: 5.8rem;
     }
@@ -774,7 +775,7 @@ li{
     }
 }
 
-@media(min-height:700px){
+@media(min-height:800px){
     .homeContainer-bar1 {
         display: none;
     }
