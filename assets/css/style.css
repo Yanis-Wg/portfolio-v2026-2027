@@ -663,10 +663,10 @@ li{
     }
     footer>nav>ul>li>h2 {
         padding-left: 0.75rem;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .footer-link {
-        font-size: 0.75rem;
+        font-size: 0.8rem;
     }
     footer>nav>ul>li>a {
         padding-left: 1rem;
