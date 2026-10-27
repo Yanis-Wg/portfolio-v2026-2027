@@ -761,7 +761,7 @@ li{
     }
 }
 
-@media(min-width:1300px){
+@media(min-width:1600px){
     .homeContainer-bar1 {
         width: 11rem;
         rotate: -46.5deg;
@@ -771,5 +771,17 @@ li{
     .homeContainer-bar2 {
         rotate: -12.8deg;
         bottom: 15vh;
+    }
+}
+
+@media(min-height:700px){
+    .homeContainer-bar1 {
+        display: none;
+    }
+    .homeContainer-bar2 {
+        display: none;
+    }
+    .homeContainer-texte1 {
+        top: 5.7vh;
     }
 }
