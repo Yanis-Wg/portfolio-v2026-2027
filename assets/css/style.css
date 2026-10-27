@@ -752,7 +752,7 @@ li{
     }
 }
 
-@media(max-width:350px){
+@media(max-width:370px){
     footer>.footer-f>div {
         gap: 0;
         display: flex;
