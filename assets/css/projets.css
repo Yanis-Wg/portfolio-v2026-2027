@@ -141,3 +141,21 @@
 .projectFilterAndDisposition>button:hover{
     scale: 0.9;
 }
+
+@media(max-width:780px){
+    .projectFilterButtons>button>h3 {
+        text-wrap: nowrap;
+    }
+    .project>div>h2 {
+        font-size: 1.2rem;
+    }
+    .projectFilterAndDisposition>button {
+        display: none;
+    }
+    .allProjects {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .projectFilterButtons {
+        overflow: scroll;
+    }
+}

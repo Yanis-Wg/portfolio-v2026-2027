@@ -747,4 +747,16 @@ li{
     .skillsContainer-app>div>img {
         width: 2rem;
     }
+    footer>.footer-f>div {
+        gap: 0.5rem;
+    }
+}
+
+@media(max-width:330px){
+    footer>.footer-f>div {
+        gap: 0;
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+    }
 }
