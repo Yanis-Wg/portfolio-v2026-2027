@@ -40,19 +40,30 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollToPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/TextPlugin.min.js"></script>
-
     <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->    
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/EasePack.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomEase.min.js"></script>
     <!-- GSAP External code -->
-     <script src="./assets/js/gsapAnimation.js"></script>
+    <script src="./assets/js/gsapAnimation.js"></script>
+    <script src="./assets/js/dayOrNightMode.js" defer></script>
+    <!-- light mode -->
+    <meta name="color-scheme" content="light dark">
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('theme');
+                if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                document.documentElement.dataset.theme = t;
+            } catch (e) {}
+        })();
+    </script>
 </head>
 <body>
     <!-- HEADER -->
     <header>
         <section class="preheader-container">
             <p>portfolio ~ version 1.0</p>
-            <button>
+            <button id="theme-toggle" type="button" aria-pressed="false">
                 <div></div>
                 <p>Night Mode</p>
             </button>
@@ -146,7 +157,9 @@
                             Caractère Chinois signifiant “renaissance”
                         </p>
                     </div>
-                    <img src="./assets/images/home/Accueil/lycoris_renaissance_red.svg" alt="lycoris">
+                    <img class="lycoris lycoris-light" src="./assets/images/home/Accueil/lycoris_renaissance_red.svg" alt="lycoris">
+                    <img class="lycoris lycoris-dark" src="./assets/images/home/Accueil/lycoris_renaissance_red_dark_theme.svg" alt="lycoris">
+                    <!-- <img src="./assets/images/home/Accueil/lycoris_renaissance_red.svg" alt="lycoris"> -->
                 </div>
                 <!-- Troisième Section -->
                 <div class="homeContainer-secondDiv-thirdSection">
@@ -282,13 +295,6 @@
                     </div>
                     <div class="skillsContainer-app">
                         <div>
-                            <img src="./assets/images/home/Accueil/skills/barba.svg" alt="">
-                            <h3>Barba JS</h3>
-                        </div>
-                        <p>Création de transitions fluides entre les pages.</p>
-                    </div>
-                    <div class="skillsContainer-app">
-                        <div>
                             <img src="./assets/images/home/Accueil/skills/wordpress.svg" alt="">
                             <h3>Wordpress</h3>
                         </div>
@@ -335,6 +341,13 @@
                             <h3>Angular</h3>
                         </div>
                         <p>Développement d’interfaces web dynamiques.</p>
+                    </div>
+                    <div class="skillsContainer-app">
+                        <div>
+                            <img src="./assets/images/home/Accueil/skills/barba.svg" alt="">
+                            <h3>Barba JS</h3>
+                        </div>
+                        <p>Création de transitions fluides entre les pages.</p>
                     </div>
                 </div>
             </div>

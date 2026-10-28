@@ -45,7 +45,19 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/EasePack.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomEase.min.js"></script>
     <!-- GSAP External code -->
-     <script src="../assets/js/gsapAnimation.js"></script>
+    <script src="../assets/js/gsapAnimation.js"></script>
+    <script src="../assets/js/dayOrNightMode.js" defer></script>
+    <!-- light mode -->
+    <meta name="color-scheme" content="light dark">
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('theme');
+                if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                document.documentElement.dataset.theme = t;
+            } catch (e) {}
+        })();
+    </script>
 </head>
 <body>
     <!-- HEADER -->
@@ -71,6 +83,15 @@
             </ul>
         </nav>
     </header> -->
+    <header>
+        <section class="preheader-container">
+            <p>portfolio ~ version 1.0</p>
+            <button id="theme-toggle" type="button" aria-pressed="false">
+                <div></div>
+                <p>Night Mode</p>
+            </button>
+        </section>
+    </header>
     <!-- CONTACT MENU -->
     <nav onclick="socialMediaMenuAnimationOpenOrClose()" id="menuReseauxSociaux">
         <button>

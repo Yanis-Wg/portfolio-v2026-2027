@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    border-bottom: 2px solid #D6D6D6;
+    border-bottom: 2px solid var(--dayModeProjetFiltreSeparation);
 }
 
 .projectFilterAndDisposition>div{
@@ -23,7 +23,7 @@
 
 .projectFilterAndDisposition>div>h2{
     font-family: "SatoshiB";
-    color: #727272;
+    color: var(--dayModeFiltreH2);
     font-size: 1.5rem;
 }
 
@@ -34,12 +34,12 @@
 .backButton{
     width: 3rem;
     height: 3rem;
-    background-color: rgba(217, 217, 217, 0.38);
+    background-color: var(--dayModeBackButton);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0.75rem;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 4px var(--dayModeButtonBoxShadow);
     transition: 0.2s ease;
 }
 
@@ -56,11 +56,11 @@
 
 .projectFilterButtons>button{
     padding: 0.5rem;
-    background-color: white;
+    background-color: var(--dayModeComposantBackgroundColor);
     border-radius: 33px;
     font-size: 0.75rem;
     font-family: "SatoshiB";
-    color: #9F9F9F;
+    color: var(--dayModeFiltreButtonInactive);
     margin: 1rem 0;
     display: flex;
     align-items: center;
@@ -72,24 +72,25 @@
     margin: 1rem 0 1rem 0.5rem;
 }
 
+.projectFilterAndDisposition>button{
+    border: none;
+    background: transparent;
+}
+
 .isCheck{
     width: 1rem;
     height: 1rem;
-    background-color: #d9d9d9;
+    background-color: var(--dayModeProjetFiltreIsCheck);
     border-radius: 33px;
     transition: 0.3s ease;
 }
 
-/* .isCheck:first-child{
-    background-color: red;
-} */
-
 .projectFilterButtons>button:first-child{
-    color: black;
+    color: var(--dayModeBlack);
 }
 
 .projectFilterButtons>button:first-child>div{
-    background-color: black;
+    background-color: var(--dayModeBlack);
 }
 
 /* All project */
@@ -106,7 +107,7 @@
     justify-content: space-between;
     align-items: end;
     width: 100%;
-    background-color: white;
+    background-color: var(--dayModeComposantBackgroundColor);
     height: 18.75rem;
     border-radius: 1.5rem;
     transition: 0.3s ease;
@@ -131,7 +132,7 @@
     padding: 3rem;
     font-size: 0.75rem;
     font-family: "SatoshiR";
-    color: #727272;
+    color: var(--dayModeFiltreH2);
 }
 
 .projectFilterAndDisposition>button{

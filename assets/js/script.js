@@ -35,14 +35,14 @@ function checkOrNot(number){
     let check = document.getElementsByClassName("isCheck")
     let checkh3 = document.getElementsByClassName("checkOrNotH3")
     for(let i=0;i<number;i++){
-        check[i].style.backgroundColor="#d9d9d9"
-        checkh3[i].style.color="#9F9F9F"
+        check[i].style.backgroundColor="var(--dayModeProjetFiltreIsCheck)"
+        checkh3[i].style.color="var(--dayModeFiltreButtonInactive)"
     }
     for(let i=number;i<7;i++){
-        check[i].style.backgroundColor="#d9d9d9"
-        checkh3[i].style.color="#9F9F9F"   
+        check[i].style.backgroundColor="var(--dayModeProjetFiltreIsCheck)"
+        checkh3[i].style.color="var(--dayModeFiltreButtonInactive)"
     }
-    checkh3[number].style.color="black"
+    checkh3[number].style.color="var(--dayModeBlack)"
 
     // Tout les filtres
     let allProjects=document.getElementsByClassName("project")
@@ -419,10 +419,6 @@ function whatItMean(number){
             popOrNot2++
         }
     }
-}
-
-function dayOrNightMode(){
-    
 }
 
 let intervalId = null;

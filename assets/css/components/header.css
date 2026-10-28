@@ -28,8 +28,8 @@ header nav>ul{
     border-radius: 2rem;
     height: 3.125rem;
     width: fit-content;
-    background-color: var(--headerBackgroundColor);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    /* background-color: var(--headerBackgroundColor); */
+    box-shadow: 0px 2px 4px var(--dayModeButtonBoxShadow);
     backdrop-filter: blur(3px);
 }
 
@@ -46,7 +46,7 @@ header nav>ul>li>a{
     padding: 0;
     font-family: "SatoshiLI";
     font-size: 0.75rem;
-    color: grey;
+    color: var(--dayModeGrey);
     padding: 0 1rem 0.5rem 1rem;
 }
 
@@ -58,11 +58,11 @@ header nav>ul>li>a{
     padding: 0.2rem 0.5rem;
     font-family: "SatoshiLI";
     font-size: 0.75rem;
-    color: grey;
+    color: var(--dayModeGrey);
     width: fit-content;
     border-radius: 55px;
-    border: 1px solid lightgray;
-    background-color: white;
+    border: 1px solid var(--dayModeLightGrey);
+    background-color: var(--dayModeComposantBackgroundColor);
 }
 
 .preheader-container>button>div{
@@ -70,5 +70,5 @@ header nav>ul>li>a{
     width: 0.75rem;
     height: 0.75rem;   
     border-radius: 55px;
-    border: 1px solid darkgray;
+    border: 1px solid var(--dayModeDarkGrey);
 }

@@ -65,6 +65,7 @@ a{
 
 p, a, li, h1, h2, h3, h4, h5, button{
     font-weight: normal;
+    color: var(--dayModeBlack);
 }
 
 li{
@@ -98,7 +99,7 @@ li{
     height: fit-content;
     width: fit-content;
     background:var(--dayModeButtonColor);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 4px var(--dayModeButtonBoxShadow);
     backdrop-filter: blur(2px);
     border-radius: 12px;
     z-index: 15;
@@ -110,7 +111,7 @@ li{
     padding: 0.7rem;
     display: flex;
     background:var(--dayModeButtonColor);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 4px var(--dayModeButtonBoxShadow);
     backdrop-filter: blur(2px);
     border-radius: 800px;
     transition: ease 0.2s;
@@ -157,12 +158,12 @@ li{
     /* width: 3rem; */
     height: 2.75rem;
     font-size: 0.75rem;
-    color: black;
+    color: var(--dayModeBlack);
     justify-content: space-around;
     align-items: center;
     text-transform: uppercase;
-    background: rgba(217, 217, 217, 0.38);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    background: var(--dayModeCallToActionBg);
+    box-shadow: 0px 2px 4px var(--dayModeButtonBoxShadow);
     backdrop-filter: blur(2px);
     border-radius: 3.3rem;
     margin: 1.2rem;
@@ -192,12 +193,12 @@ li{
     width: 3rem;
     height: 2.75rem;
     font-size: 0.75rem;
-    color: black;
+    color: var(--dayModeBlack);
     justify-content: space-around;
     align-items: center;
     text-transform: uppercase;
-    background: rgba(217, 217, 217, 0.38);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    background: var(--dayModeCallToActionBg);
+    box-shadow: 0px 2px 4px var(--dayModeButtonBoxShadow);
     backdrop-filter: blur(2px);
     border-radius: 3.3rem;
     margin: 1.2rem;
@@ -374,8 +375,8 @@ li{
     flex-direction: column;
     padding: 1.2rem 2rem;
     /* width: max-content; */
-    height: 42.5rem;
-    background-color: #FFFFFF;
+    height: 46.5rem;    
+    background-color: var(--dayModeComposantBackgroundColor);
     border-radius: 1.5rem;
 }
 
@@ -403,7 +404,7 @@ li{
 .skillsContainer-app>div>h3{
     font-family: "SatoshiB";
     font-size: 1rem;
-    border-left: 2px solid black;
+    border-left: 2px solid var(--dayModeBlack);
     padding-left: 0.5rem;
 }
 
@@ -421,7 +422,7 @@ li{
     height: 95vh;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--dayModeComposantBackgroundColor);
     border-radius: 1.5rem;
     justify-content: center;
     align-items: center;
@@ -449,7 +450,7 @@ li{
 .testimonyContainer-card{
     width: 22rem;
     height: 32rem;
-    background-color: white;
+    background-color: var(--dayModeComposantBackgroundColor);
     border-radius: 1.5rem;
     padding: 1.875rem;
     display: flex;
@@ -471,9 +472,9 @@ li{
 .testimonyContainer-card>img{
     width: 5.31rem;
     height: 5.31rem;
-    background-color: grey;
+    background-color: var(--dayModeGrey);
     border-radius: 55rem;
-    border: 1px solid darkgrey;
+    border: 1px solid var(--dayModeDarkGrey);
 }
 
 .italic{
@@ -493,8 +494,8 @@ li{
     border: none;
     width: 4rem;
     height: 2.75rem;
-    background: rgba(217, 217, 217, 0.38);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    background: var(--dayModeCallToActionBg);
+    box-shadow: 0px 2px 4px var(--dayModeButtonBoxShadow);
     backdrop-filter: blur(2px);
     border-radius: 53px;
     transition: 0.2s ease;
@@ -509,8 +510,8 @@ li{
     position: absolute;
     width: 0.75rem;
     height: 0.75rem;
-    background: #FFFFFF;
-    border: 1px solid #000000;
+    background: var(--dayModeComposantBackgroundColor);
+    border: 1px solid var(--dayModeBlack);
     border-radius: 55rem;
     cursor: pointer;
     z-index: 10;
@@ -528,7 +529,7 @@ li{
 
 .homeContainer-bar1 {
     width: 11rem;
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px var(--dayModeBlack);
     position: absolute;
     rotate: -45.1deg;
     right: -1.5rem;
@@ -543,8 +544,8 @@ li{
     position: absolute;
     right: -14.15rem;
     top: 8.7vh;
-    background-color: #FFFFFF;
-    border: 1px solid black;
+    background-color: var(--dayModeComposantBackgroundColor);
+    border: 1px solid var(--dayModeBlack);
     padding: 7px 10px;
     font-family: "SatoshiLI";
     font-size: 0.75rem;
@@ -555,7 +556,7 @@ li{
 
 .homeContainer-bar2 {
     width: 7.8rem;
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px var(--dayModeBlack);
     position: absolute;
     rotate: -15.8deg;
     right: -0.07rem;
@@ -570,8 +571,8 @@ li{
     position: absolute;
     right: -14.15rem;
     bottom: 16.7vh;
-    background-color: #FFFFFF;
-    border: 1px solid black;
+    background-color: var(--dayModeComposantBackgroundColor);
+    border: 1px solid var(--dayModeBlack);
     padding: 7px 10px;
     font-family: "SatoshiLI";
     font-size: 0.75rem;
@@ -602,7 +603,7 @@ li{
     }
     .skillsContainer-part {
         padding: 1.2rem 1.5rem;
-        height: 44.5rem;
+        height: 46.5rem;
     }
     .skillsContainer {
         overflow: scroll;
@@ -688,7 +689,7 @@ li{
     }
     ul>.black-line {
         border-right: none;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid var(--dayModeBlack);
         padding-bottom: 0.5rem;
     }
     footer>.footer-f>div {
@@ -698,7 +699,7 @@ li{
         gap: 0.75rem;
     }
     .skillsContainer-part {
-        height: 40.5rem;
+        height: 42.5rem;
     }
     .skillsContainer-part>h2 {
         padding-bottom: 1rem;
@@ -737,7 +738,7 @@ li{
         font-size: 0.75rem;
     }
     .skillsContainer-part {
-        height: 38.5rem;
+        height: 40.5rem;
     }
     .italic {
         font-size: 0.9rem;
