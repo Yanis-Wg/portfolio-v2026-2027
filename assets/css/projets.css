@@ -53,7 +53,9 @@
     gap: 1rem;
     width: 100%;
 }
-
+.allProjects{
+    padding-top: 0.7rem;
+}
 .projectFilterButtons>button{
     padding: 0.5rem;
     background-color: var(--dayModeComposantBackgroundColor);
