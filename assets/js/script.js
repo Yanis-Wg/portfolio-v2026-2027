@@ -421,6 +421,37 @@ function whatItMean(number){
     }
 }
 
+// son boutton
+
+const clickSound = new Audio('/assets/sounds/click.mp3');   // ← ton lien ici
+clickSound.volume = 0.4;
+clickSound.preload = 'auto';
+
+document.addEventListener('click', (e) => {
+    if (e.target.closest('button, .callToAction, .callToActionTwo, .footer-link, a')) {
+        playClick();
+    }
+});
+
+let soundOn = localStorage.getItem('sound') !== 'off';
+
+function toggleSound() {
+    soundOn = !soundOn;
+    try { localStorage.setItem('sound', soundOn ? 'on' : 'off'); } catch (e) {}
+}
+
+function playClick() {
+    if (!soundOn) return;
+    clickSound.currentTime = 0;
+    clickSound.play().catch(() => {});
+}
+
+function playSound(src, volume = 0.4) {
+    const s = new Audio(src);
+    s.volume = volume;
+    s.play().catch(() => {});
+}
+
 let intervalId = null;
 const isDesktop = window.matchMedia("(min-width: 801px)");
 
