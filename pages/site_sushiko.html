@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Yanis Wong, étudiant ingénieur ESIEE (IMAC) : développement web FullStack, UI/UX design et projets créatifs.">
+    <title>Yanis Wong – Mes Projets</title>
+    <!-- ICONE -->
+    <link rel="icon" href="../assets/images/icons/pokeball_logo.png" type="image/png">
+    <link rel="stylesheet" href="../assets/css/components/animation.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/projet_template.css">
+    <!-- HEAD -->
+    <link rel="stylesheet" href="../assets/css/components/variable.css">
+    <link rel="stylesheet" href="../assets/css/components/header.css">
+    <link rel="stylesheet" href="../assets/css/components/footer.css">
+    <script src="../assets/js/script.js" defer></script>
+    <!-- SMOOTH SCROLL -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.27/dist/lenis.css">
+    <script src="https://unpkg.com/lenis@1.3.27/dist/lenis.min.js"></script> 
+    <script>new Lenis({ autoRaf: true, autoToggle: true, anchors: true, allowNestedScroll: true, naiveDimensions: true, stopInertiaOnNavigate: true })</script>
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/DrawSVGPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/EaselPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/GSDevTools.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/InertiaPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/MotionPathHelper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/MorphSVGPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Observer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Physics2DPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/PhysicsPropsPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/PixiPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrambleTextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/TextPlugin.min.js"></script>
+
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->    
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/EasePack.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomEase.min.js"></script>
+    <!-- GSAP External code -->
+    <script src="../assets/js/gsapAnimation.js"></script>
+    <script src="../assets/js/dayOrNightMode.js" defer></script>
+    <!-- light mode -->
+    <meta name="color-scheme" content="light dark">
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('theme');
+                if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                document.documentElement.dataset.theme = t;
+            } catch (e) {}
+        })();
+    </script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <section class="preheader-container">
+            <p>portfolio ~ version 1.0</p>
+            <button id="theme-toggle" type="button" aria-pressed="false">
+                <div></div>
+                <p>Mode Nuit</p>
+            </button>
+        </section>
+        <nav onclick="headerAnimation()" id="header-container">
+            <ul>
+                <li>
+                    <a class="header-a" href="../index.html">Accueil</a>
+                </li>
+                <li>
+                    <a class="header-a" href="#contextAnchor">Description</a>
+                </li>
+                <li>
+                    <a class="header-a" href="#videoAnchor">Aperçu</a>
+                </li>
+                <li>
+                    <a class="header-a" href="./projets.html">Projets</a>
+                </li>
+                <li>
+                    <a class="header-a" href="#footerAnchor">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- CONTACT MENU -->
+    <nav onclick="socialMediaMenuAnimationOpenOrClose()" id="menuReseauxSociaux">
+        <button>
+            <img src="../assets/images/icons/social_media_menu.svg" alt="Social">
+        </button>
+        <a target="_blank" class="menuReseauxSociaux-item" href="../assets/docs/CV_UI_UX_Designer_Yanis_WONG.pdf">
+            <img src="../assets/images/icons/cv.svg" alt="CV">
+        </a>
+        <a target="_blank" class="menuReseauxSociaux-item" href="https://www.linkedin.com/in/yaniswong04/">
+            <img src="../assets/images/icons/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a target="_blank" class="menuReseauxSociaux-item" href="https://github.com/Yanis-Wg">
+            <img src="../assets/images/icons/github.svg" alt="GitHub">
+        </a>
+        <a class="menuReseauxSociaux-item" href="mailto:yanis.wong.pro@gmail.com">
+            <img src="../assets/images/icons/mail.svg" alt="Mail">
+        </a>
+    </nav>
+    <!-- MAIN -->
+    <main>
+        <section>
+            <a class="backButton" href="../index.html">
+                <img src="../assets/images/icons/button-left.svg" alt="">
+            </a>
+        </section>
+        <section class="projectTemplate1-container sushiko-container"></section>
+        <section id="contextAnchor" class="projectDescription-container">
+            <div>
+                <h1>Context</h1>
+                <h2>2024</h2>
+            </div>
+            <div class="projectDescription-description">
+                <div>
+                    <h2>Description</h2>
+                    <div>
+                        <p>During my second year in MMI, I had the opportunity to complete a six-month internship with a group named Expert IT. In this group, I worked for several companies, primarily as a web developer. I created four websites, each built from scratch by myself. One was for Streamcore, another for Brain Networks, a third for Expert IT itself, and the last one for Connect 3C. Additionally, thanks to my skills, I took the initiative to assist as a graphic designer for a special project: the creation of a kakemono for Streamcore.
+                        This internship taught me a great deal about working independently, requiring extensive research on the internet and utilizing educational resources on platforms like OpenClassrooms and YouTube.
+                        In addition to delivering these websites, I completed them quickly without sacrificing quality. I demonstrated to myself that I am a reactive, dynamic, rigorous, and autonomous individual.</p>
+                    </div>
+                    <h2>Technology</h2>
+                    <div>
+                        <p>HTML/CSS</p>
+                        <p>JavaScript</p>
+                        <p>Figma</p>
+                    </div>
+                </div>
+                <div>
+                    <a onmouseover="rotateOnHover(0)" onmouseout="rotateOnLeave(0)" class="callToAction" href="./assets/docs/">
+                        <p>VOIR LE PROJET</p>
+                        <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="arrow">
+                    </a> 
+                </div>
+            </div>
+        </section>
+        <section class="projectTemplate2-container"></section>
+        <section id="videoAnchor" class="projectVideo-container">
+            <video controls="" muted="" loop="">
+                <source src="ressource/video/Stage-2024-streamcore.mp4" type="video/mp4">
+                Désolé, votre navigateur ne supporte pas la balise vidéo. Vous pouvez <a href="ressource/video/CultureM-Portoflio.mp4">télécharger la vidéo ici</a>.
+            </video>
+        </section>
+        <section class="projectTemplate3-container">
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <section class="nextProject-container">
+            <div>
+                <a onmouseover="rotateOnHover(1)" onmouseout="rotateOnLeave(1)" class="callToAction callToAction-nextProject" href="../pages/projets.html">
+                    <p>VOIR PLUS DE PROJET</p>
+                    <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="arrow">
+                </a> 
+            </div>
+        </section>
+    </main><!-- FOOTER -->
+    <footer id="footerAnchor">
+        <nav>
+            <ul>
+                <li class="black-line">
+                    <h2>Mail</h2>
+                    <a href="mailto:yanis.wong.pro@gmail.com" onmouseover="rotateOnHover(2)" onmouseout="rotateOnLeave(2)" class="footer-link">
+                        yanis.wong.pro@gmail.com
+                        <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="">
+                    </a>
+                </li>
+                <li class="black-line">
+                    <h2>GitHub</h2>
+                    <a href="https://github.com/Yanis-Wg" target="_blank" onmouseover="rotateOnHover(3)" onmouseout="rotateOnLeave(3)" class="footer-link">
+                        yanis_wg
+                        <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="">
+                    </a>
+                </li>
+                <li class="black-line">
+                    <h2>LinkedIn</h2>
+                    <a href="https://www.linkedin.com/in/yaniswong04/" target="_blank" onmouseover="rotateOnHover(4)" onmouseout="rotateOnLeave(4)" class="footer-link">
+                        yanis-wong
+                        <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <h2>Télécharger mon CV</h2>
+                    <a href="./assets/docs/CV_UI_UX_Designer_Yanis_WONG.pdf" target="_blank" onmouseover="rotateOnHover(5)" onmouseout="rotateOnLeave(5)" class="footer-link">
+                        yanis-wong
+                        <img class="callToActionArrow" src="../assets/images/icons/arrow.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer-f">
+            <div>
+                <p>Paris, France</p>
+                <div>
+                    <div id="available-light"></div>
+                    <p>Available</p>
+                </div>
+            </div>
+            <div>
+                <p>+33 7 67 88 73 80</p>
+                <p>©2026</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

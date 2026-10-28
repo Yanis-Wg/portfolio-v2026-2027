@@ -180,3 +180,45 @@
         padding: 0.75rem 0 0 0;
     }
 }
+
+.portfolio-container{
+    background-image: url(../images/mockUpHomePage_OldPortf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pokemon-container{
+    background-image: url(../images/mockUpHomePage_PokeApi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.acf2l-container{
+    background-image: url(../images/mockUpHomePage_ACF2L.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sushiko-container{
+    background-image: url(../images/mockUpHomePage_SushiKo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.alternance-container{
+    background-image: url(../images/mockUpHomePage_streamcore.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.affiche_bien_etre-container{
+    background-image: url(../images/mockUpHomePage_Affiche_sante_bien_etre.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
