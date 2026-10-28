@@ -66,7 +66,7 @@ function checkOrNot(number){
             for(let i=0;i<allProjects.length;i++){
                 allProjects[i].style.display="flex"
             }
-            check[number].style.backgroundColor="black"
+            check[number].style.backgroundColor="var(--dayModeBlack)"
             break
         // UI&UX Design
         case 1:
