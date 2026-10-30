@@ -93,6 +93,8 @@
 
 .projectVideo-container{
     display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     height: 90vh;
     width: 100%;
     justify-content: center;
@@ -322,15 +324,57 @@
     background-position: center;  
 }
 
+.albumCover-container{
+    background-image: url(../images/WONG_Yanis_CD_Cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
 .couvertureAlbum-container{
-    background-image: url(../images/mockUpHomePage_3dCover);
+    background-image: url(../images/WONG_Yanis_CD_Cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;  
 }
 
 .couvertureAlbum-container2{
-    background-image: url(../images/mockUpHomePage_3dCover.jpg);
+    background-image: url(../images/mockUpHomePage_3dCover1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.coffreBlender-container{
+    background-image: url(../images/coffreblender0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.coffreBlender-container2{
+    background-image: url(../images/coffreblender2bis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-coffreBlender>div:first-child{
+    background-image: url(../images/coffreblender1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-coffreBlender>div:last-child{
+    background-image: url(../images/coffreblender3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-coffreBlender>div:nth-child(2) {
+    background-image: url(../images/coffreblender2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;  
@@ -391,6 +435,25 @@
 }
 .projectTemplate3-foodFinder>div:last-child{
     background-image: url(../images/mockUpHomePage_FoodFinder.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-couvertureAlbum>div:nth-child(2) {
+    background-image: url(../images/albumcover2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+.projectTemplate3-couvertureAlbum>div:first-child {
+    background-image: url(../images/albumcover1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+.projectTemplate3-couvertureAlbum>div:last-child{
+    background-image: url(../images/albumcover3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;  

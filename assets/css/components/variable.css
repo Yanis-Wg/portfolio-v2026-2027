@@ -64,7 +64,7 @@
 
 :root .project>div>.callToAction>img,
 :root .callToActionTwo>img,
-:root #callToActionPlus>img,
+:root #callToActionPlus,
 :root #projectsAnchor>a>img{
     filter: invert(1);
 }
