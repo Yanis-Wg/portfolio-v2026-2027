@@ -307,6 +307,35 @@
     background-position: center;  
 }
 
+.bet-container{
+    background-image: url(../images/mockUpHomePage_bet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.bet-container2{
+    background-image: url(../images/mockUpHomePage_bet2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.couvertureAlbum-container{
+    background-image: url(../images/mockUpHomePage_3dCover);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.couvertureAlbum-container2{
+    background-image: url(../images/mockUpHomePage_3dCover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
 .projectTemplate3-alternance>div:first-child{
     background-image: url(../images/mockUpHomePage_alternance2.jpg);
     background-repeat: no-repeat;

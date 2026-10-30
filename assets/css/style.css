@@ -635,7 +635,7 @@ li{
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 945px){
     .homeContainer-firstDiv {
         padding: 2.5rem 0 0 2.5rem;
     }
@@ -858,13 +858,6 @@ li{
     position: relative;
 }
 
-.bet-container{
-    background-image: url(../images/mockUpHomePage_bet.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
 
 .opacityColForBG{
     position: absolute;
