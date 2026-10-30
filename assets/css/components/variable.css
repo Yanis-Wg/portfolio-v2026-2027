@@ -5,6 +5,7 @@
     --pFirstSectionFontSize:0.75rem;
     --boutonFontSize:0.75rem;
     /* MODE JOUR */
+    --headerColor:##f0f0f096;
     --dayModeBackgroundColor:#F0F0F0;
     --dayModeComposantBackgroundColor:#FFF;
     --dayModeButtonColor:#EAEAEA;
@@ -36,7 +37,7 @@
 
 :root[data-theme="dark"] {
     color-scheme: dark;
-
+    --headerColor:rgba(90, 90, 90, 0.38);
     --dayModeBackgroundColor: var(--nightModeBackgroundColor);
     --dayModeComposantBackgroundColor: var(--nightModeComposantBackgroundColor);
     --dayModeButtonColor: #2A2A2A;
@@ -60,6 +61,13 @@
 .lycoris-dark { display: none; }
 :root[data-theme="dark"] .lycoris-light { display: none; }
 :root[data-theme="dark"] .lycoris-dark { display: block; }
+
+:root .project>div>.callToAction>img,
+:root .callToActionTwo>img,
+:root #callToActionPlus>img,
+:root #projectsAnchor>a>img{
+    filter: invert(1);
+}
 
 /* Icônes SVG noires utilisées en <img> : on les inverse */
 :root[data-theme="dark"] .callToActionArrow,

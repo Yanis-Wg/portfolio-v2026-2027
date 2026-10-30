@@ -193,7 +193,7 @@ li{
     width: 3rem;
     height: 2.75rem;
     font-size: 0.75rem;
-    color: var(--dayModeBlack);
+    /* color: var(--dayModeBlack); */
     justify-content: space-around;
     align-items: center;
     text-transform: uppercase;
@@ -205,6 +205,13 @@ li{
     transition: 0.5s ease;
 }
 
+.callToActionTwo>p{
+    color: white;
+}
+
+#projectsAnchor>a>p{
+    color: white;
+}
 .firstDisplayPro{
     width: 12rem;
 }
@@ -354,9 +361,12 @@ li{
 }
 
 .projectContainer-projects>div>h2{
+    color: white;
+    /* mix-blend-mode: difference; */
     font-size: 1.5rem;
     font-family: "LiterataM";
     padding: 1.2rem;
+    z-index: 5;
 }
 
 .projectContainer-projects div:last-child{
@@ -426,9 +436,14 @@ li{
     border-radius: 1.5rem;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
-
+.callToAction{
+    z-index: 5;
+}
 .allProjectContainer>h2{
+    z-index: 5;
+    color: white;
     font-size: 1.5rem;
     font-family: "LiterataM";
 }
@@ -581,7 +596,14 @@ li{
     transition: 0.3s ease-in;
 }
 
+#skillsAnchor>#buttonNextOrPrevious-skills{
+    display: none;
+}
+
 @media (max-width: 1034px) {
+    #skillsAnchor>#buttonNextOrPrevious-skills{
+        display: flex;
+    }
     .homeContainer-bar1 {
         width: 11.6rem;
         rotate: -47.1deg;
@@ -786,4 +808,73 @@ li{
     .homeContainer-texte1 {
         top: 5.7vh;
     }
+}
+
+.portfolio2024-bg{
+    background-image: url(../images/mockUpHomePage_OldPortf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.pokemonApi-bg{
+    background-image: url(../images/mockUpHomePage_PokeApi1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.fig-bg{
+    background-image: url(../images/mockUpHomePage_fig.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.affiche-bg{
+    background-image: url(../images/mockUpHomePage_Affiche_sante_bien_etre.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.be-bg{
+    background-image: url(../images/mockUpHomePage_magzineBe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.allproject-bg{
+    background-image: url(../images/mockUp_allproject.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.bet-container{
+    background-image: url(../images/mockUpHomePage_bet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.opacityColForBG{
+    position: absolute;
+    background-color: rgba(50, 50, 50, 0.422);
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+    /* backdrop-filter: blur(1.5px); */
+}
+
+.callToActionPlus{
+    z-index: 5;
 }

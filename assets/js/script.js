@@ -389,6 +389,30 @@ function initTestimonyCarousel() {
 
 document.addEventListener("DOMContentLoaded", initTestimonyCarousel);
 
+function initSkillsCarousel() {
+    const track = document.querySelector(".skillsContainer");
+    const prev = document.getElementById("skillsPrev");
+    const next = document.getElementById("skillsNext");
+    if (!track || !prev || !next) return;
+
+    // largeur d'une carte + l'espace (gap) entre deux cartes
+    function getStep() {
+        const card = track.querySelector(".skillsContainer-part");
+        const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+        return card.offsetWidth + gap;
+    }
+
+    next.addEventListener("click", () => {
+        track.scrollBy({ left: getStep(), behavior: "smooth" });
+    });
+
+    prev.addEventListener("click", () => {
+        track.scrollBy({ left: -getStep(), behavior: "smooth" });
+    });
+}
+
+document.addEventListener("DOMContentLoaded", initSkillsCarousel);
+
 let popOrNot1=0
 let popOrNot2=0
 function whatItMean(number){

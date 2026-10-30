@@ -188,8 +188,36 @@
     background-position: center;
 }
 
+.portfolio-container2{
+    background-image: url(../images/mockUpHomePage_OldPortf1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fig-container{
+    background-image: url(../images/mockUpHomePage_fig.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fig-container2{
+    background-image: url(../images/mockUpHomePage_fig2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .pokemon-container{
     background-image: url(../images/mockUpHomePage_PokeApi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pokemon-container2{
+    background-image: url(../images/mockUpHomePage_PokeApi1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -202,8 +230,22 @@
     background-position: center;
 }
 
+.acf2l-container1{
+    background-image: url(../images/mockUpHomePage_ACF2L1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .sushiko-container{
     background-image: url(../images/mockUpHomePage_SushiKo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sushiko-container1{
+    background-image: url(../images/mockUpHomePage_SushiKo1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -216,8 +258,110 @@
     background-position: center;  
 }
 
+.alternance-container1{
+    background-image: url(../images/mockUpHomePage_streamcore1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
 .affiche_bien_etre-container{
     background-image: url(../images/mockUpHomePage_Affiche_sante_bien_etre.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.affiche_bien_etre-container1{
+    background-image: url(../images/.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.magazine_be-container{
+    background-image: url(../images/mockUpHomePage_magzineBe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.magazine_be-container1{
+    background-image: url(../images/mockUpHomePage_magzineBe1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.foodFinder-container{
+    background-image: url(../images/mockUpHomePage_FoodFinder.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.foodFinder-container1{
+    background-image: url(../images/mockUpHomePage_FoodFinder1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-alternance>div:first-child{
+    background-image: url(../images/mockUpHomePage_alternance2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-alternance>div:last-child{
+    background-image: url(../images/mockUpHomePage_alternance1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-alternance>div:nth-child(2) {
+    background-image: url(../images/mockUpHomePage_alternance.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-afficheBienEtre>div:last-child{
+    background-image: url(../images/mockUpHomePage_Affiche_sante_bien_etre1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-afficheBienEtre>div:nth-child(2) {
+    background-image: url(../images/mockUpHomePage_Affiche_sante_bien_etre2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-fig>div:last-child{
+    background-image: url(../images/mockUpHomePage_Fig1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+.projectTemplate3-fig>div:nth-child(2) {
+    background-image: url(../images/mockUpHomePage_fig4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+.projectTemplate3-fig>div:first-child {
+    background-image: url(../images/mockUpHomePage_fig3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+.projectTemplate3-foodFinder>div:last-child{
+    background-image: url(../images/mockUpHomePage_FoodFinder.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;  
