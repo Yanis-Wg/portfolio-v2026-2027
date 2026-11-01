@@ -275,7 +275,7 @@
 }
 
 .affiche_bien_etre-container1{
-    background-image: url(../images/.jpg);
+    background-image: url(../images/mockUpHomePage_Affiche_sante_bien_etrebis.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;  
@@ -401,6 +401,13 @@
     background-position: center;  
 }
 
+.projectTemplate3-afficheBienEtre>div:first-child{
+    background-image: url(../images/mockUpHomePage_Affiche_sante_bien_etre3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
 .projectTemplate3-afficheBienEtre>div:last-child{
     background-image: url(../images/mockUpHomePage_Affiche_sante_bien_etre1.jpg);
     background-repeat: no-repeat;
@@ -433,12 +440,6 @@
     background-size: cover;
     background-position: center;  
 }
-.projectTemplate3-foodFinder>div:last-child{
-    background-image: url(../images/mockUpHomePage_FoodFinder.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;  
-}
 
 .projectTemplate3-couvertureAlbum>div:nth-child(2) {
     background-image: url(../images/albumcover2.jpg);
@@ -454,6 +455,151 @@
 }
 .projectTemplate3-couvertureAlbum>div:last-child{
     background-image: url(../images/albumcover3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-portfolio2024>div:nth-child(2) {
+    background-image: url(../images/mockUpHomePage_OldPortf3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+.projectTemplate3-portfolio2024>div:first-child {
+    background-image: url(../images/mockUpHomePage_OldPortf2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+.projectTemplate3-portfolio2024>div:last-child{
+    background-image: url(../images/mockUpHomePage_OldPortf4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-pokemonApi>div:nth-child(2) {
+    background-image: url(../images/mockUpHomePage_PokeApi3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-pokemonApi>div:first-child {
+    background-image: url(../images/mockUpHomePage_PokeApi2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-pokemonApi>div:last-child{
+    background-image: url(../images/mockUpHomePage_PokeApi4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-ACF2L>div:nth-child(2) {
+    background-image: url(../images/mockUpHomePage_ACF2L3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-ACF2L>div:first-child {
+    background-image: url(../images/mockUpHomePage_ACF2L2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-ACF2L>div:last-child{
+    background-image: url(../images/mockUpHomePage_ACF2L4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-sushiko>div:nth-child(2) {
+    background-image: url(../images/mockUpHomePage_SushiKo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-sushiko>div:first-child {
+    background-image: url(../images/mockUpHomePage_SushiKo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-sushiko>div:last-child{
+    background-image: url(../images/mockUpHomePage_SushiKo4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-foodFinder>div:nth-child(2) {
+    background-image: url(../images/mockUp_foodFinder4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-foodFinder>div:first-child {
+    background-image: url(../images/mockUp_foodFinder2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-foodFinder>div:last-child{
+    background-image: url(../images/mockUp_foodFinder3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-magazine>div:nth-child(2) {
+    background-image: url(../images/mockUp_magazine3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-magazine>div:first-child {
+    background-image: url(../images/mockUp_magazine2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-magazine>div:last-child{
+    background-image: url(../images/mockUp_magazine4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-bet>div:nth-child(2) {
+    background-image: url(../images/mockUp_bet3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-bet>div:first-child {
+    background-image: url(../images/mockUp_bet2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.projectTemplate3-bet>div:last-child{
+    background-image: url(../images/mockUp_bet4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;  
