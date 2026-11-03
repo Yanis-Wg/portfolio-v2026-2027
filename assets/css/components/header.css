@@ -34,8 +34,19 @@ header nav>ul{
     backdrop-filter: blur(3px);
 }
 
+header nav>ul>li{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header nav>ul>li>a{
     color: var(--headerTextColor);
+    height: 100%;
+        display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .preheader-container{

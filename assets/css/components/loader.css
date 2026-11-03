@@ -1,0 +1,37 @@
+#loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+[data-theme="dark"] #loader {
+  background: #111;
+}
+
+#loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #ddd;
+  border-top-color: #111;
+  border-radius: 50%;
+  animation: loader-spin 0.8s linear infinite;
+}
+
+[data-theme="dark"] .loader-spinner {
+  border-color: #333;
+  border-top-color: #fff;
+}
+
+@keyframes loader-spin {
+  to { transform: rotate(360deg); }
+}

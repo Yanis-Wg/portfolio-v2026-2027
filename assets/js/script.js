@@ -1,3 +1,4 @@
+
 // function sizeOfCallToAction(){
 //     tab=document.getElementsByClassName("callToAction")
 //     for(let i=0;i<tab.length;i++){
@@ -412,6 +413,103 @@ function initSkillsCarousel() {
 }
 
 document.addEventListener("DOMContentLoaded", initSkillsCarousel);
+
+function initFigCarousel() {
+    const track = document.querySelector(".fig_affiche-container");
+    const prev = document.getElementById("figPrev");
+    const next = document.getElementById("figNext");
+    if (!track || !prev || !next) return;
+
+    // largeur d'une carte + l'espace (gap) entre deux cartes
+    function getStep() {
+        const card = track.querySelector(".fig_afficheContainer-part");
+        const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+        return card.offsetWidth + gap;
+    }
+
+    next.addEventListener("click", () => {
+        track.scrollBy({ left: getStep(), behavior: "smooth" });
+    });
+
+    prev.addEventListener("click", () => {
+        track.scrollBy({ left: -getStep(), behavior: "smooth" });
+    });
+}
+
+document.addEventListener("DOMContentLoaded", initFigCarousel);
+
+function initMagazine() {
+    const track = document.querySelector(".magazine-container");
+    const prev = document.getElementById("magazinePrev");
+    const next = document.getElementById("magazineNext");
+    if (!track || !prev || !next) return;
+
+    // largeur d'une carte + l'espace (gap) entre deux cartes
+    function getStep() {
+        const card = track.querySelector(".magazineContainer-part");
+        const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+        return card.offsetWidth + gap;
+    }
+
+    next.addEventListener("click", () => {
+        track.scrollBy({ left: getStep(), behavior: "smooth" });
+    });
+
+    prev.addEventListener("click", () => {
+        track.scrollBy({ left: -getStep(), behavior: "smooth" });
+    });
+}
+
+document.addEventListener("DOMContentLoaded", initMagazine);
+
+function initfoodFinder() {
+    const track = document.querySelector(".foodFinder-containerz");
+    const prev = document.getElementById("foodFinderPrev");
+    const next = document.getElementById("foodFinderNext");
+    if (!track || !prev || !next) return;
+
+    // largeur d'une carte + l'espace (gap) entre deux cartes
+    function getStep() {
+        const card = track.querySelector(".foodFinderContainer-part");
+        const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+        return card.offsetWidth + gap;
+    }
+
+    next.addEventListener("click", () => {
+        track.scrollBy({ left: getStep(), behavior: "smooth" });
+    });
+
+    prev.addEventListener("click", () => {
+        track.scrollBy({ left: -getStep(), behavior: "smooth" });
+    });
+}
+
+document.addEventListener("DOMContentLoaded", initfoodFinder);
+
+
+function initCouvertureAlbum() {
+    const track = document.querySelector(".couvertureAlbumz-container");
+    const prev = document.getElementById("couvertureAlbumPrev");
+    const next = document.getElementById("couvertureAlbumNext");
+    if (!track || !prev || !next) return;
+
+    // largeur d'une carte + l'espace (gap) entre deux cartes
+    function getStep() {
+        const card = track.querySelector(".couvertureAlbumContainer-part");
+        const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+        return card.offsetWidth + gap;
+    }
+
+    next.addEventListener("click", () => {
+        track.scrollBy({ left: getStep(), behavior: "smooth" });
+    });
+
+    prev.addEventListener("click", () => {
+        track.scrollBy({ left: -getStep(), behavior: "smooth" });
+    });
+}
+
+document.addEventListener("DOMContentLoaded", initCouvertureAlbum);
 
 let popOrNot1=0
 let popOrNot2=0

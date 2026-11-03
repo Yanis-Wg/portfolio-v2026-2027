@@ -58,8 +58,14 @@
             } catch (e) {}
         })();
     </script>
+        <!-- test -->  
+    <link rel="stylesheet" href="../assets/css/components/loader.css"> 
+    <script src="../assets/js/loader.js" defer></script> 
 </head>
 <body>
+    <div id="loader" aria-label="Chargement" role="status">
+        <div class="loader-spinner"></div>
+    </div>
     <!-- HEADER -->
     <header>
         <section class="preheader-container">
@@ -141,11 +147,23 @@
             </div>
         </section>
         <section class="projectTemplate2-container foodFinder-container1"></section>
-        <section id="videoAnchor" class="projectVideo-container">
-            <video controls="" muted="" loop="">
-                <source src="ressource/video/Stage-2024-streamcore.mp4" type="video/mp4">
-                Désolé, votre navigateur ne supporte pas la balise vidéo. Vous pouvez <a href="ressource/video/CultureM-Portoflio.mp4">télécharger la vidéo ici</a>.
-            </video>
+        <section class="image_projet">
+            <div class="foodFinder-containerz foodFinder-center">
+                <div class="foodFinderContainer-part">
+                    <img src="../assets/images/projets/foodfinder/FoodFinder-2.jpg" alt="">
+                </div>
+                <div class="foodFinderContainer-part">
+                    <img src="../assets/images/projets/foodfinder/FoodFinder-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="buttonNextOrPrevious-foodfinder">
+                <button id="foodFinderPrev" aria-label="Avis précédent">
+                    <img src="../assets/images/icons/button-left.svg" alt="">
+                </button>
+                <button id="foodFinderNext" aria-label="Avis suivant">
+                    <img src="../assets/images/icons/button-right.svg" alt="">
+                </button>
+            </div>
         </section>
         <section class="projectTemplate3-container projectTemplate3-foodFinder">
             <div></div>

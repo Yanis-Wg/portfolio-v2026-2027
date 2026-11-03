@@ -58,8 +58,14 @@
             } catch (e) {}
         })();
     </script>
+        <!-- test -->  
+    <link rel="stylesheet" href="../assets/css/components/loader.css"> 
+    <script src="../assets/js/loader.js" defer></script> 
 </head>
 <body>
+    <div id="loader" aria-label="Chargement" role="status">
+        <div class="loader-spinner"></div>
+    </div>
     <!-- HEADER -->
     <header>
         <section class="preheader-container">
@@ -142,9 +148,54 @@
         <section class="projectTemplate2-container fig-container2"></section>
         <section id="videoAnchor" class="projectVideo-container">
             <video controls="" muted="" loop="">
-                <source src="ressource/video/Stage-2024-streamcore.mp4" type="video/mp4">
+                <source src="../assets/video/fig.mp4" type="video/mp4">
                 Désolé, votre navigateur ne supporte pas la balise vidéo. Vous pouvez <a href="ressource/video/CultureM-Portoflio.mp4">télécharger la vidéo ici</a>.
             </video>
+        </section>
+        <section class="image_projet">
+            <div class="fig_affiche-container">
+                <div class="fig_afficheContainer-part">
+                    <img src="../assets/images/projets/fig/affiche1.jpg" alt="">
+                </div>
+                <div class="fig_afficheContainer-part">
+                    <img src="../assets/images/projets/fig/affiche2.jpg" alt="">
+                </div>
+                <div class="fig_afficheContainer-part">
+                    <img src="../assets/images/projets/fig/affiche3.jpg" alt="">
+                </div>
+                <div class="fig_afficheContainer-part">
+                    <img src="../assets/images/projets/fig/affiche4.jpg" alt="">
+                </div>
+                <div class="fig_afficheContainer-part">
+                    <img src="../assets/images/projets/fig/affiche5.jpg" alt="">
+                </div>
+                <div class="fig_afficheContainer-part">
+                    <img src="../assets/images/projets/fig/affiche6.jpg" alt="">
+                </div>
+                <div class="fig_afficheContainer-part">
+                    <img src="../assets/images/projets/fig/affiche7.jpg" alt="">
+                </div>
+                <div class="fig_afficheContainer-part">
+                    <img src="../assets/images/projets/fig/affiche8.jpg" alt="">
+                </div>
+                <div class="fig_afficheContainer-part">
+                    <img src="../assets/images/projets/fig/affiche9.jpg" alt="">
+                </div>
+                <div class="fig_afficheContainer-part">
+                    <img src="../assets/images/projets/fig/affiche10.jpg" alt="">
+                </div>
+                <div class="fig_afficheContainer-part">
+                    <img src="../assets/images/projets/fig/affiche11.jpg" alt="">
+                </div>
+            </div>
+            <div class="buttonNextOrPrevious">
+                <button id="figPrev" aria-label="Avis précédent">
+                    <img src="../assets/images/icons/button-left.svg" alt="">
+                </button>
+                <button id="figNext" aria-label="Avis suivant">
+                    <img src="../assets/images/icons/button-right.svg" alt="">
+                </button>
+            </div>
         </section>
         <section class="projectTemplate3-container projectTemplate3-fig">
             <div></div>
