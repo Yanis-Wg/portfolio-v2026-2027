@@ -200,7 +200,7 @@ function checkOrNot(number){
     animateProjects()
 }
 
-let quelDispo=2
+let quelDispo=3
 
 function changeDisposition(){
     let allProjects = document.getElementsByClassName("allProjects")[0]
