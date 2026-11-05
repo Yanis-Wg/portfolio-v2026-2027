@@ -112,7 +112,7 @@
     background-color: var(--dayModeComposantBackgroundColor);
     height: 18.75rem;
     border-radius: 1.5rem;
-    transition: 0.3s ease;
+    /* transition: 0.3s ease; */
     position: relative;
 }
 

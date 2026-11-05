@@ -3,8 +3,13 @@
   if (!loader) return;
 
   /* ---------- ARRIVÉE SUR LA PAGE : on cache le loader ---------- */
+  let loaderDoneSent = false;
+
   function hideLoader() {
     loader.classList.add('hidden');
+    if (loaderDoneSent) return;
+    loaderDoneSent = true;
+    document.dispatchEvent(new Event('loaderDone'));
   }
 
   const pageLoaded = document.readyState === 'complete'

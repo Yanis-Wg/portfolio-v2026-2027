@@ -197,6 +197,7 @@ function checkOrNot(number){
             check[number].style.backgroundColor="rgb(255, 240, 34)"
             break
     }
+    animateProjects()
 }
 
 let quelDispo=2

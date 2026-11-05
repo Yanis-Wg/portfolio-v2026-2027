@@ -39,8 +39,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
     //VARIABLE
     const machin1  = document.querySelector(".homeContainer")
-    const machin1Titre = document.querySelector(".home_container-titre")
-    const machin2 = document.querySelector(".animation")
+    const machin2 = document.querySelector(".skillsContainer-part")
+    const machin3 = document.querySelector(".allProjectContainer")
 
     const box1 = document.querySelector(".aboutMe_texte")
     const box2 = document.querySelector(".aboutMe_container")
@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         start: 0,
       }
     })
+    
     gsap.from(".home_container-animation2",{
         delay:1.9,
         y:"70px",
@@ -76,14 +77,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         stagger:0.2,
         ease: "power3.out",
     })
-    // gsap.from(".home_container-titre",{
-    //     delay:0,
-    //     //   y:"70px",
-    //     duration:1,
-    //     opacity:0,
-    //     // stagger: 0.15,
-    //     ease: "power3.out",
-    // })
+
     gsap.from(".home_container-fleur",{
         delay:1,
           y:"50px",
@@ -92,15 +86,75 @@ document.addEventListener("DOMContentLoaded", (event) => {
         // stagger: 0.15,
         ease: "power3.out",
     })
+    
+    // gsap.to(".home_container-fleur",{
+    //     y:"790px",
+    //     opacity:0,
+    //     yoyo:true,
+    //     scrollTrigger:{
+    //         trigger:machin1,
+    //         // markers:true,
+    //         toggleActions : "play reverse play reverse",
+    //         scrub:1.7,
+    //         start: 0,
+    //     }
+    // })
+
     gsap.from(".home_container-point",{
         delay:1.4,
-          y:"50px",
+        y:"50px",
         duration:1,
         opacity:0,
         stagger: 0.20,
         ease: "power3.out",
     })
+
+    gsap.from(".skillsContainer-part",{
+        delay:0.4,
+        // y:"790px",
+        opacity:0,
+        duration:2,
+        stagger:0.5,
+        ease: "power3.out",
+        scrollTrigger:{
+            trigger:machin2,
+            // markers:true,
+            start: "top bottom",
+            end: "center 20%",
+            toggleActions : "play reverse play reverse",
+            // scrub:1.7,
+        }
+    })
+
+    // gsap.from(".project",{
+    //     delay:1.2,
+    //     y:"310px",
+    //     duration:1.5,
+    //     opacity:0,
+    //     stagger: 0.3,
+    //     ease: "power3.out",
+    // })
+
 });
+
+function animateProjects() {
+  const visibles = Array.from(document.querySelectorAll(".project"))
+    .filter((p) => getComputedStyle(p).display !== "none");
+
+  gsap.fromTo(
+    visibles,
+    { y: 60, opacity: 0 },
+    {
+      y: 0,
+      opacity: 1,
+      duration: 0.7,
+      stagger: 0.4,
+      ease: "circ.out",
+      overwrite: true,        // un clic rapide coupe l'animation précédente
+      clearProps: "transform,opacity",
+    }
+  );
+}
 
 
 
