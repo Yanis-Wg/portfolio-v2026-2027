@@ -102,7 +102,7 @@
 }
 
 .projectVideo-container>video{
-    width: 40vw;
+    width: 80vw;
     background-color: var(--dayModeComposantBackgroundColor);
 }
 
