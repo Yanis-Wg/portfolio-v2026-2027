@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         ease: "power3.out",
         scrollTrigger:{
             trigger:machin2,
-            markers:true,
+            // markers:true,
             start: "40% bottom",
             end: "center 20%",
             toggleActions : "play reverse play reverse",
