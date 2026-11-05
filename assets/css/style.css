@@ -870,3 +870,22 @@ li{
 .callToActionPlus{
     z-index: 5;
 }
+
+
+.welcome-screen{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-screen{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-screen>h1{
+    color: var(--dayModeComposantBackgroundColor);
+}
